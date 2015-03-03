@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated SyVolt -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="syvolt.presentation.SyvoltModelWizardID"
+            name="%_UI_SyvoltModelWizard_label"
+            class="syvolt.presentation.SyvoltModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SyvoltModelFile.gif">
+         <description>%_UI_SyvoltModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated SyVolt -->
+      <editor
+            id="syvolt.presentation.SyvoltEditorID"
+            name="%_UI_SyvoltEditor_label"
+            icon="icons/full/obj16/SyvoltModelFile.gif"
+            extensions="syvolt"
+            class="syvolt.presentation.SyvoltEditor"
+            contributorClass="syvolt.presentation.SyvoltActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,24 @@
+#################
+## Eclipse
+#################
+
+*.pydevproject
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# Ignore generated files
+SyVoltSyntax/src/
+SyVoltSyntax.diagram/src/
+SyVoltSyntax.edit/src/
+SyVoltSyntax.editor/src/
+SyVoltSyntax.tests/src/
+

@@ -1,0 +1,7 @@
+# Tracing options for the SyVoltSyntax.diagram plug-in
+
+# Common issues
+SyVoltSyntax.diagram/debug=false
+
+# Visual IDs
+SyVoltSyntax.diagram/debug/visualID=false

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/SyVoltSyntaxEditorFeature_1.0.0.201503032043.jar" id="SyVoltSyntaxEditorFeature" version="1.0.0.201503032043"/>
+</site>
