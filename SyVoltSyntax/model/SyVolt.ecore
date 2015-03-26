@@ -10,6 +10,15 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
         eType="#//AbstractSource" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specification" lowerBound="1"
+        eType="#//GlobalSpecification" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GlobalSpecification">
+    <eAnnotations source="gmf.node">
+      <details key="label" value="value"/>
+      <details key="tool.description" value="Create a specification."/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Layer" abstract="true" eSuperTypes="#//AbstractSource">
     <eAnnotations source="gmf.node">
@@ -61,13 +70,7 @@
       <details key="tool.description" value="Match at most one class."/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NegativeMatchClass" eSuperTypes="#//MatchClass">
-    <eAnnotations source="gmf.node">
-      <details key="border.color" value="255,61,100"/>
-      <details key="tool.description" value="Exclude class from pattern."/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="MatchModel">
+  <eClassifiers xsi:type="ecore:EClass" name="PreCondition">
     <eAnnotations source="gmf.node">
       <details key="foo" value="bar"/>
       <details key="tool.description" value="Match pattern. Place inside Rule."/>
@@ -116,13 +119,6 @@
       <details key="tool.description" value="Existing direct association."/>
     </eAnnotations>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NegativeMatchAssociation" eSuperTypes="#//MatchAssociation">
-    <eAnnotations source="gmf.link">
-      <details key="color" value="255,61,100"/>
-      <details key="width" value="2"/>
-      <details key="tool.description" value="Non-existing direct association."/>
-    </eAnnotations>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ApplyClass" eSuperTypes="#//AbstractClass">
     <eAnnotations source="gmf.node">
       <details key="foo" value="bar"/>
@@ -136,7 +132,7 @@
     </eStructuralFeatures>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="groupName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="ApplyModel">
+  <eClassifiers xsi:type="ecore:EClass" name="PostCondition">
     <eAnnotations source="gmf.node">
       <details key="color" value="255,255,163"/>
       <details key="tool.description" value="Apply pattern. Place inside Rule."/>
@@ -221,12 +217,12 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="match" lowerBound="1" upperBound="-1"
-        eType="#//MatchModel" containment="true">
+        eType="#//PreCondition" containment="true">
       <eAnnotations source="gmf.compartment">
         <details key="foo" value="bar"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="apply" lowerBound="1" eType="#//ApplyModel"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="apply" lowerBound="1" eType="#//PostCondition"
         containment="true">
       <eAnnotations source="gmf.compartment">
         <details key="foo" value="bar"/>
@@ -237,16 +233,10 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="attributeRelations" upperBound="-1"
         eType="#//AbstractAttributeRelation" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="PositiveBackwardRestriction" eSuperTypes="#//AbstractTemporalRelation">
+  <eClassifiers xsi:type="ecore:EClass" name="Trace" eSuperTypes="#//AbstractTemporalRelation">
     <eAnnotations source="gmf.link">
       <details key="foo" value="bar"/>
       <details key="tool.description" value="Create a generator-generated restriction."/>
-    </eAnnotations>
-  </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="NegativeBackwardRestriction" eSuperTypes="#//AbstractTemporalRelation">
-    <eAnnotations source="gmf.link">
-      <details key="color" value="255,61,100"/>
-      <details key="tool.description" value="Avoid a generator-generated situation."/>
     </eAnnotations>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Sequential" eSuperTypes="#//Layer">
@@ -317,12 +307,6 @@
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="TypeOf" eSuperTypes="#//Operator #//AttributeRef">
-    <eAnnotations source="gmf.node">
-      <details key="foo" value="bar"/>
-      <details key="label.placement" value="none"/>
-    </eAnnotations>
-  </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Wildcard" eSuperTypes="#//Term">
     <eAnnotations source="gmf.node">
       <details key="tool.description" value="Match any literal."/>
@@ -370,5 +354,25 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="sourceAttribute" eType="#//Attribute"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetAttribute" eType="#//Attribute"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MatchSameElements" eSuperTypes="#//MatchAssociation">
+    <eAnnotations source="gmf.link">
+      <details key="color" value="153,255,153"/>
+      <details key="source" value="source"/>
+      <details key="target" value="target"/>
+      <details key="target.decoration" value="none"/>
+      <details key="width" value="2"/>
+      <details key="label.text" value="equal"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ApplySameElements" eSuperTypes="#//ApplyAssociation">
+    <eAnnotations source="gmf.link">
+      <details key="color" value="153,255,153"/>
+      <details key="source" value="source"/>
+      <details key="target" value="target"/>
+      <details key="target.decoration" value="none"/>
+      <details key="width" value="2"/>
+      <details key="label.text" value="equal"/>
+    </eAnnotations>
   </eClassifiers>
 </ecore:EPackage>

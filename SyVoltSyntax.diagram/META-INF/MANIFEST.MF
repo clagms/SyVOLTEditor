@@ -7,7 +7,7 @@ Bundle-ClassPath: .
 Bundle-Activator: syvolt.diagram.part.SyvoltDiagramEditorPlugin
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: syvolt.diagram.edit.parts, 
+Export-Package: syvolt.diagram.edit.parts,
  syvolt.diagram.part,
  syvolt.diagram.providers
 Require-Bundle: org.eclipse.core.runtime,

@@ -52,16 +52,16 @@
             <ownedChild
                 relatedDiagrams="//@diagram">
               <domainMetaElement
-                  href="SyVolt.ecore#//MatchModel"/>
+                  href="SyVolt.ecore#//PreCondition"/>
               <tool
                   xsi:type="gmftool:CreationTool"
-                  href="SyVolt.gmftool#//@palette/@tools.0/@tools.11"/>
+                  href="SyVolt.gmftool#//@palette/@tools.0/@tools.12"/>
               <diagramNode
-                  href="SyVolt.gmfgraph#MatchModel"/>
+                  href="SyVolt.gmfgraph#PreCondition"/>
               <children
                   compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@compartments.0">
                 <containmentFeature
-                    href="SyVolt.ecore#//MatchModel/class"/>
+                    href="SyVolt.ecore#//PreCondition/class"/>
                 <ownedChild
                     relatedDiagrams="//@diagram">
                   <domainMetaElement
@@ -114,7 +114,7 @@
                           </labelMappings>
                           <tool
                               xsi:type="gmftool:CreationTool"
-                              href="SyVolt.gmftool#//@palette/@tools.0/@tools.4"/>
+                              href="SyVolt.gmftool#//@palette/@tools.0/@tools.3"/>
                           <diagramNode
                               href="SyVolt.gmfgraph#Atom"/>
                         </ownedChild>
@@ -135,7 +135,7 @@
                           </labelMappings>
                           <tool
                               xsi:type="gmftool:CreationTool"
-                              href="SyVolt.gmftool#//@palette/@tools.0/@tools.16"/>
+                              href="SyVolt.gmftool#//@palette/@tools.0/@tools.15"/>
                           <diagramNode
                               href="SyVolt.gmfgraph#isNull"/>
                         </ownedChild>
@@ -157,7 +157,7 @@
               <children
                   compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@compartments.0">
                 <containmentFeature
-                    href="SyVolt.ecore#//MatchModel/class"/>
+                    href="SyVolt.ecore#//PreCondition/class"/>
                 <ownedChild
                     relatedDiagrams="//@diagram">
                   <domainMetaElement
@@ -171,7 +171,7 @@
                   </labelMappings>
                   <tool
                       xsi:type="gmftool:CreationTool"
-                      href="SyVolt.gmftool#//@palette/@tools.0/@tools.8"/>
+                      href="SyVolt.gmftool#//@palette/@tools.0/@tools.7"/>
                   <diagramNode
                       href="SyVolt.gmfgraph#ExistsMatchClass"/>
                   <children
@@ -187,43 +187,10 @@
                   </compartments>
                 </ownedChild>
               </children>
-              <children
-                  compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@compartments.0">
-                <containmentFeature
-                    href="SyVolt.ecore#//MatchModel/class"/>
-                <ownedChild
-                    relatedDiagrams="//@diagram">
-                  <domainMetaElement
-                      href="SyVolt.ecore#//NegativeMatchClass"/>
-                  <labelMappings
-                      xsi:type="gmfmap:FeatureLabelMapping">
-                    <diagramLabel
-                        href="SyVolt.gmfgraph#NegativeMatchClassLabel"/>
-                    <features
-                        href="SyVolt.ecore#//AbstractClass/className"/>
-                  </labelMappings>
-                  <tool
-                      xsi:type="gmftool:CreationTool"
-                      href="SyVolt.gmftool#//@palette/@tools.0/@tools.12"/>
-                  <diagramNode
-                      href="SyVolt.gmfgraph#NegativeMatchClass"/>
-                  <children
-                      compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.2/@ownedChild/@compartments.0"
-                      referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild">
-                    <containmentFeature
-                        href="SyVolt.ecore#//MatchClass/attribute"/>
-                  </children>
-                  <compartments
-                      children="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.2/@ownedChild/@children.0">
-                    <compartment
-                        href="SyVolt.gmfgraph#NegativeMatchClassAttributeCompartment"/>
-                  </compartments>
-                </ownedChild>
-              </children>
               <compartments
-                  children="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.2">
+                  children="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.1">
                 <compartment
-                    href="SyVolt.gmfgraph#MatchModelClassCompartment"/>
+                    href="SyVolt.gmfgraph#PreConditionClassCompartment"/>
               </compartments>
             </ownedChild>
           </children>
@@ -234,16 +201,16 @@
             <ownedChild
                 relatedDiagrams="//@diagram">
               <domainMetaElement
-                  href="SyVolt.ecore#//ApplyModel"/>
+                  href="SyVolt.ecore#//PostCondition"/>
               <tool
                   xsi:type="gmftool:CreationTool"
-                  href="SyVolt.gmftool#//@palette/@tools.0/@tools.3"/>
+                  href="SyVolt.gmftool#//@palette/@tools.0/@tools.11"/>
               <diagramNode
-                  href="SyVolt.gmfgraph#ApplyModel"/>
+                  href="SyVolt.gmfgraph#PostCondition"/>
               <children
                   compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@compartments.0">
                 <containmentFeature
-                    href="SyVolt.ecore#//ApplyModel/class"/>
+                    href="SyVolt.ecore#//PostCondition/class"/>
                 <ownedChild
                     relatedDiagrams="//@diagram">
                   <domainMetaElement
@@ -281,20 +248,6 @@
                       <diagramNode
                           href="SyVolt.gmfgraph#ApplyAttribute"/>
                       <children
-                          compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@compartments.0">
-                        <containmentFeature
-                            href="SyVolt.ecore#//ApplyAttribute/attributeValue"/>
-                        <ownedChild>
-                          <domainMetaElement
-                              href="SyVolt.ecore#//TypeOf"/>
-                          <tool
-                              xsi:type="gmftool:CreationTool"
-                              href="SyVolt.gmftool#//@palette/@tools.0/@tools.14"/>
-                          <diagramNode
-                              href="SyVolt.gmfgraph#TypeOf"/>
-                        </ownedChild>
-                      </children>
-                      <children
                           compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@compartments.0"
                           referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild">
                         <containmentFeature
@@ -309,7 +262,7 @@
                               href="SyVolt.ecore#//AttributeRef"/>
                           <tool
                               xsi:type="gmftool:CreationTool"
-                              href="SyVolt.gmftool#//@palette/@tools.0/@tools.5"/>
+                              href="SyVolt.gmftool#//@palette/@tools.0/@tools.4"/>
                           <diagramNode
                               href="SyVolt.gmfgraph#AttributeRef"/>
                         </ownedChild>
@@ -323,7 +276,7 @@
                               href="SyVolt.ecore#//ClassRef"/>
                           <tool
                               xsi:type="gmftool:CreationTool"
-                              href="SyVolt.gmftool#//@palette/@tools.0/@tools.6"/>
+                              href="SyVolt.gmftool#//@palette/@tools.0/@tools.5"/>
                           <diagramNode
                               href="SyVolt.gmfgraph#ClassRef"/>
                         </ownedChild>
@@ -338,88 +291,76 @@
                               href="SyVolt.ecore#//Concat"/>
                           <tool
                               xsi:type="gmftool:CreationTool"
-                              href="SyVolt.gmftool#//@palette/@tools.0/@tools.7"/>
+                              href="SyVolt.gmftool#//@palette/@tools.0/@tools.6"/>
                           <diagramNode
                               href="SyVolt.gmfgraph#Concat"/>
                           <children
-                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@compartments.0"
-                              referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild">
-                            <containmentFeature
-                                href="SyVolt.ecore#//Concat/leftTerm"/>
-                          </children>
-                          <children
-                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@compartments.1"
-                              referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild">
-                            <containmentFeature
-                                href="SyVolt.ecore#//Concat/rightTerm"/>
-                          </children>
-                          <children
-                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@compartments.0"
+                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@compartments.0"
                               referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild">
                             <containmentFeature
                                 href="SyVolt.ecore#//Concat/leftTerm"/>
                           </children>
                           <children
-                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@compartments.0"
+                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@compartments.0"
+                              referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild">
+                            <containmentFeature
+                                href="SyVolt.ecore#//Concat/leftTerm"/>
+                          </children>
+                          <children
+                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@compartments.0"
                               referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.2/@ownedChild">
                             <containmentFeature
                                 href="SyVolt.ecore#//Concat/leftTerm"/>
                           </children>
                           <children
-                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@compartments.0"
+                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@compartments.0"
                               referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild">
                             <containmentFeature
                                 href="SyVolt.ecore#//Concat/leftTerm"/>
                           </children>
                           <children
-                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@compartments.0"
-                              referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild">
-                            <containmentFeature
-                                href="SyVolt.ecore#//Concat/leftTerm"/>
-                          </children>
-                          <children
-                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@compartments.1"
+                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@compartments.1"
                               referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild">
                             <containmentFeature
                                 href="SyVolt.ecore#//Concat/rightTerm"/>
                           </children>
                           <children
-                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@compartments.1"
+                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@compartments.1"
+                              referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild">
+                            <containmentFeature
+                                href="SyVolt.ecore#//Concat/rightTerm"/>
+                          </children>
+                          <children
+                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@compartments.1"
                               referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.2/@ownedChild">
                             <containmentFeature
                                 href="SyVolt.ecore#//Concat/rightTerm"/>
                           </children>
                           <children
-                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@compartments.1"
+                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@compartments.1"
                               referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild">
                             <containmentFeature
                                 href="SyVolt.ecore#//Concat/rightTerm"/>
                           </children>
                           <children
-                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@compartments.1"
+                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@compartments.0"
                               referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild">
-                            <containmentFeature
-                                href="SyVolt.ecore#//Concat/rightTerm"/>
-                          </children>
-                          <children
-                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@compartments.0"
-                              referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.5/@ownedChild">
                             <containmentFeature
                                 href="SyVolt.ecore#//Concat/leftTerm"/>
                           </children>
                           <children
-                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@compartments.1"
-                              referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.5/@ownedChild">
+                              compartment="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@compartments.1"
+                              referencedChild="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild">
                             <containmentFeature
                                 href="SyVolt.ecore#//Concat/rightTerm"/>
                           </children>
                           <compartments
-                              children="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@children.10">
+                              children="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@children.8">
                             <compartment
                                 href="SyVolt.gmfgraph#ConcatLeftTermCompartment"/>
                           </compartments>
                           <compartments
-                              children="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@children.8 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@children.9 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4/@ownedChild/@children.11">
+                              children="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@children.5 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@children.6 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@children.7 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3/@ownedChild/@children.9">
                             <compartment
                                 href="SyVolt.gmfgraph#ConcatRightTermCompartment"/>
                           </compartments>
@@ -434,13 +375,13 @@
                               href="SyVolt.ecore#//Wildcard"/>
                           <tool
                               xsi:type="gmftool:CreationTool"
-                              href="SyVolt.gmftool#//@palette/@tools.0/@tools.15"/>
+                              href="SyVolt.gmftool#//@palette/@tools.0/@tools.14"/>
                           <diagramNode
                               href="SyVolt.gmfgraph#Wildcard"/>
                         </ownedChild>
                       </children>
                       <compartments
-                          children="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.5">
+                          children="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.0 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.1 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.2 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.3 //@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0/@ownedChild/@children.0/@ownedChild/@children.4">
                         <compartment
                             href="SyVolt.gmfgraph#ApplyAttributeAttributeValueCompartment"/>
                       </compartments>
@@ -456,7 +397,7 @@
               <compartments
                   children="//@nodes.0/@ownedChild/@children.0/@ownedChild/@children.1/@ownedChild/@children.0">
                 <compartment
-                    href="SyVolt.gmfgraph#ApplyModelClassCompartment"/>
+                    href="SyVolt.gmfgraph#PostConditionClassCompartment"/>
               </compartments>
             </ownedChild>
           </children>
@@ -479,14 +420,34 @@
       </compartments>
     </ownedChild>
   </nodes>
+  <nodes>
+    <containmentFeature
+        href="SyVolt.ecore#//TransformationModel/specification"/>
+    <ownedChild>
+      <domainMetaElement
+          href="SyVolt.ecore#//GlobalSpecification"/>
+      <labelMappings
+          xsi:type="gmfmap:FeatureLabelMapping">
+        <diagramLabel
+            href="SyVolt.gmfgraph#GlobalSpecificationLabel"/>
+        <features
+            href="SyVolt.ecore#//GlobalSpecification/value"/>
+      </labelMappings>
+      <tool
+          xsi:type="gmftool:CreationTool"
+          href="SyVolt.gmftool#//@palette/@tools.0/@tools.8"/>
+      <diagramNode
+          href="SyVolt.gmfgraph#GlobalSpecification"/>
+    </ownedChild>
+  </nodes>
   <links>
     <domainMetaElement
         href="SyVolt.ecore#//PositiveIndirectAssociation"/>
     <containmentFeature
-        href="SyVolt.ecore#//MatchModel/association"/>
+        href="SyVolt.ecore#//PreCondition/association"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="SyVolt.gmftool#//@palette/@tools.1/@tools.7"/>
+        href="SyVolt.gmftool#//@palette/@tools.1/@tools.6"/>
     <diagramLink
         href="SyVolt.gmfgraph#PositiveIndirectAssociation"/>
     <sourceMetaFeature
@@ -507,10 +468,10 @@
           href="SyVolt.ecore#//Association/associationName"/>
     </labelMappings>
     <containmentFeature
-        href="SyVolt.ecore#//MatchModel/association"/>
+        href="SyVolt.ecore#//PreCondition/association"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="SyVolt.gmftool#//@palette/@tools.1/@tools.4"/>
+        href="SyVolt.gmftool#//@palette/@tools.1/@tools.5"/>
     <diagramLink
         href="SyVolt.gmfgraph#NegativeIndirectAssociation"/>
     <sourceMetaFeature
@@ -531,10 +492,10 @@
           href="SyVolt.ecore#//Association/associationName"/>
     </labelMappings>
     <containmentFeature
-        href="SyVolt.ecore#//MatchModel/association"/>
+        href="SyVolt.ecore#//PreCondition/association"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="SyVolt.gmftool#//@palette/@tools.1/@tools.8"/>
+        href="SyVolt.gmftool#//@palette/@tools.1/@tools.7"/>
     <diagramLink
         href="SyVolt.gmfgraph#PositiveMatchAssociation"/>
     <sourceMetaFeature
@@ -546,27 +507,51 @@
   </links>
   <links>
     <domainMetaElement
-        href="SyVolt.ecore#//NegativeMatchAssociation"/>
+        href="SyVolt.ecore#//MatchSameElements"/>
     <labelMappings
         xsi:type="gmfmap:FeatureLabelMapping">
       <diagramLabel
-          href="SyVolt.gmfgraph#NegativeMatchAssociationLabel"/>
+          href="SyVolt.gmfgraph#MatchSameElementsLabel"/>
       <features
           href="SyVolt.ecore#//Association/associationName"/>
     </labelMappings>
     <containmentFeature
-        href="SyVolt.ecore#//MatchModel/association"/>
+        href="SyVolt.ecore#//PreCondition/association"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="SyVolt.gmftool#//@palette/@tools.1/@tools.5"/>
+        href="SyVolt.gmftool#//@palette/@tools.1/@tools.4"/>
     <diagramLink
-        href="SyVolt.gmfgraph#NegativeMatchAssociation"/>
+        href="SyVolt.gmfgraph#MatchSameElements"/>
     <sourceMetaFeature
         xsi:type="ecore:EReference"
         href="SyVolt.ecore#//MatchAssociation/source"/>
     <linkMetaFeature
         xsi:type="ecore:EReference"
         href="SyVolt.ecore#//MatchAssociation/target"/>
+  </links>
+  <links>
+    <domainMetaElement
+        href="SyVolt.ecore#//ApplySameElements"/>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="SyVolt.gmfgraph#ApplySameElementsLabel"/>
+      <features
+          href="SyVolt.ecore#//Association/associationName"/>
+    </labelMappings>
+    <containmentFeature
+        href="SyVolt.ecore#//PostCondition/association"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="SyVolt.gmftool#//@palette/@tools.1/@tools.1"/>
+    <diagramLink
+        href="SyVolt.gmfgraph#ApplySameElements"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="SyVolt.ecore#//ApplyAssociation/source"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="SyVolt.ecore#//ApplyAssociation/target"/>
   </links>
   <links>
     <domainMetaElement
@@ -579,7 +564,7 @@
           href="SyVolt.ecore#//Association/associationName"/>
     </labelMappings>
     <containmentFeature
-        href="SyVolt.ecore#//ApplyModel/association"/>
+        href="SyVolt.ecore#//PostCondition/association"/>
     <tool
         xsi:type="gmftool:CreationTool"
         href="SyVolt.gmftool#//@palette/@tools.1/@tools.0"/>
@@ -594,31 +579,14 @@
   </links>
   <links>
     <domainMetaElement
-        href="SyVolt.ecore#//PositiveBackwardRestriction"/>
+        href="SyVolt.ecore#//Trace"/>
     <containmentFeature
         href="SyVolt.ecore#//Rule/backwards"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="SyVolt.gmftool#//@palette/@tools.1/@tools.6"/>
+        href="SyVolt.gmftool#//@palette/@tools.1/@tools.9"/>
     <diagramLink
-        href="SyVolt.gmfgraph#PositiveBackwardRestriction"/>
-    <sourceMetaFeature
-        xsi:type="ecore:EReference"
-        href="SyVolt.ecore#//AbstractTemporalRelation/sourceClass"/>
-    <linkMetaFeature
-        xsi:type="ecore:EReference"
-        href="SyVolt.ecore#//AbstractTemporalRelation/targetClass"/>
-  </links>
-  <links>
-    <domainMetaElement
-        href="SyVolt.ecore#//NegativeBackwardRestriction"/>
-    <containmentFeature
-        href="SyVolt.ecore#//Rule/backwards"/>
-    <tool
-        xsi:type="gmftool:CreationTool"
-        href="SyVolt.gmftool#//@palette/@tools.1/@tools.3"/>
-    <diagramLink
-        href="SyVolt.gmfgraph#NegativeBackwardRestriction"/>
+        href="SyVolt.gmfgraph#Trace"/>
     <sourceMetaFeature
         xsi:type="ecore:EReference"
         href="SyVolt.ecore#//AbstractTemporalRelation/sourceClass"/>
@@ -635,7 +603,7 @@
     </labelMappings>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="SyVolt.gmftool#//@palette/@tools.1/@tools.9"/>
+        href="SyVolt.gmftool#//@palette/@tools.1/@tools.8"/>
     <diagramLink
         href="SyVolt.gmfgraph#LayerPreviousSource"/>
     <linkMetaFeature
@@ -651,7 +619,7 @@
     </labelMappings>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="SyVolt.gmftool#//@palette/@tools.1/@tools.1"/>
+        href="SyVolt.gmftool#//@palette/@tools.1/@tools.2"/>
     <diagramLink
         href="SyVolt.gmfgraph#AttributeRefAttributeRef"/>
     <linkMetaFeature
@@ -667,7 +635,7 @@
     </labelMappings>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="SyVolt.gmftool#//@palette/@tools.1/@tools.2"/>
+        href="SyVolt.gmftool#//@palette/@tools.1/@tools.3"/>
     <diagramLink
         href="SyVolt.gmfgraph#ClassRefClassRef"/>
     <linkMetaFeature

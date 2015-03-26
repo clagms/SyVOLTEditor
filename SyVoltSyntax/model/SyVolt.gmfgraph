@@ -5,11 +5,19 @@
       <figures xsi:type="gmfgraph:PolylineDecoration" name="PositiveIndirectAssociationFigureTargetDecoration"/>
       <figures xsi:type="gmfgraph:PolylineDecoration" name="NegativeIndirectAssociationFigureTargetDecoration"/>
       <figures xsi:type="gmfgraph:PolylineDecoration" name="PositiveMatchAssociationFigureTargetDecoration"/>
-      <figures xsi:type="gmfgraph:PolylineDecoration" name="NegativeMatchAssociationFigureTargetDecoration"/>
       <figures xsi:type="gmfgraph:PolylineDecoration" name="ApplyAssociationFigureTargetDecoration"/>
       <figures xsi:type="gmfgraph:PolylineDecoration" name="LayerPreviousSourceFigureSourceDecoration"/>
       <figures xsi:type="gmfgraph:PolylineDecoration" name="AttributeRefAttributeRefFigureTargetDecoration"/>
       <figures xsi:type="gmfgraph:PolylineDecoration" name="ClassRefClassRefFigureTargetDecoration"/>
+      <descriptors name="GlobalSpecificationFigure">
+        <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="GlobalSpecificationFigure">
+          <border xsi:type="gmfgraph:MarginBorder">
+            <insets top="5" left="5" bottom="5" right="5"/>
+          </border>
+          <children xsi:type="gmfgraph:Label" name="GlobalSpecificationLabelFigure" text="GlobalSpecification"/>
+        </actualFigure>
+        <accessors accessor="getFigureGlobalSpecificationLabelFigure" figure="/0/@figures.0/@descriptors.0/@actualFigure/@children.0"/>
+      </descriptors>
       <descriptors name="AnyMatchClassFigure">
         <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AnyMatchClassFigure">
           <foregroundColor xsi:type="gmfgraph:RGBColor" red="204" green="255" blue="153"/>
@@ -21,8 +29,8 @@
           </children>
           <children xsi:type="gmfgraph:Rectangle" name="AnyMatchClassAttributeCompartmentFigure" outline="false"/>
         </actualFigure>
-        <accessors accessor="getFigureAnyMatchClassLabelFigure" figure="/0/@figures.0/@descriptors.0/@actualFigure/@children.0"/>
-        <accessors accessor="getAnyMatchClassAttributeCompartmentFigure" figure="/0/@figures.0/@descriptors.0/@actualFigure/@children.1"/>
+        <accessors accessor="getFigureAnyMatchClassLabelFigure" figure="/0/@figures.0/@descriptors.1/@actualFigure/@children.0"/>
+        <accessors accessor="getAnyMatchClassAttributeCompartmentFigure" figure="/0/@figures.0/@descriptors.1/@actualFigure/@children.1"/>
       </descriptors>
       <descriptors name="ExistsMatchClassFigure">
         <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ExistsMatchClassFigure">
@@ -35,31 +43,17 @@
           </children>
           <children xsi:type="gmfgraph:Rectangle" name="ExistsMatchClassAttributeCompartmentFigure" outline="false"/>
         </actualFigure>
-        <accessors accessor="getFigureExistsMatchClassLabelFigure" figure="/0/@figures.0/@descriptors.1/@actualFigure/@children.0"/>
-        <accessors accessor="getExistsMatchClassAttributeCompartmentFigure" figure="/0/@figures.0/@descriptors.1/@actualFigure/@children.1"/>
+        <accessors accessor="getFigureExistsMatchClassLabelFigure" figure="/0/@figures.0/@descriptors.2/@actualFigure/@children.0"/>
+        <accessors accessor="getExistsMatchClassAttributeCompartmentFigure" figure="/0/@figures.0/@descriptors.2/@actualFigure/@children.1"/>
       </descriptors>
-      <descriptors name="NegativeMatchClassFigure">
-        <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="NegativeMatchClassFigure">
-          <foregroundColor xsi:type="gmfgraph:RGBColor" red="255" green="61" blue="100"/>
+      <descriptors name="PreConditionFigure">
+        <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="PreConditionFigure">
           <border xsi:type="gmfgraph:MarginBorder">
             <insets top="5" left="5" bottom="5" right="5"/>
           </border>
-          <children xsi:type="gmfgraph:Label" name="NegativeMatchClassLabelFigure" text="NegativeMatchClass">
-            <maximumSize dx="10000" dy="50"/>
-          </children>
-          <children xsi:type="gmfgraph:Rectangle" name="NegativeMatchClassAttributeCompartmentFigure" outline="false"/>
+          <children xsi:type="gmfgraph:Rectangle" name="PreConditionClassCompartmentFigure" outline="false"/>
         </actualFigure>
-        <accessors accessor="getFigureNegativeMatchClassLabelFigure" figure="/0/@figures.0/@descriptors.2/@actualFigure/@children.0"/>
-        <accessors accessor="getNegativeMatchClassAttributeCompartmentFigure" figure="/0/@figures.0/@descriptors.2/@actualFigure/@children.1"/>
-      </descriptors>
-      <descriptors name="MatchModelFigure">
-        <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="MatchModelFigure">
-          <border xsi:type="gmfgraph:MarginBorder">
-            <insets top="5" left="5" bottom="5" right="5"/>
-          </border>
-          <children xsi:type="gmfgraph:Rectangle" name="MatchModelClassCompartmentFigure" outline="false"/>
-        </actualFigure>
-        <accessors accessor="getMatchModelClassCompartmentFigure" figure="/0/@figures.0/@descriptors.3/@actualFigure/@children.0"/>
+        <accessors accessor="getPreConditionClassCompartmentFigure" figure="/0/@figures.0/@descriptors.3/@actualFigure/@children.0"/>
       </descriptors>
       <descriptors name="ApplyClassFigure">
         <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ApplyClassFigure">
@@ -74,15 +68,15 @@
         <accessors accessor="getFigureApplyClassLabelFigure" figure="/0/@figures.0/@descriptors.4/@actualFigure/@children.0"/>
         <accessors accessor="getApplyClassAttributeCompartmentFigure" figure="/0/@figures.0/@descriptors.4/@actualFigure/@children.1"/>
       </descriptors>
-      <descriptors name="ApplyModelFigure">
-        <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="ApplyModelFigure">
+      <descriptors name="PostConditionFigure">
+        <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="PostConditionFigure">
           <backgroundColor xsi:type="gmfgraph:RGBColor" red="255" green="255" blue="163"/>
           <border xsi:type="gmfgraph:MarginBorder">
             <insets top="5" left="5" bottom="5" right="5"/>
           </border>
-          <children xsi:type="gmfgraph:Rectangle" name="ApplyModelClassCompartmentFigure" outline="false"/>
+          <children xsi:type="gmfgraph:Rectangle" name="PostConditionClassCompartmentFigure" outline="false"/>
         </actualFigure>
-        <accessors accessor="getApplyModelClassCompartmentFigure" figure="/0/@figures.0/@descriptors.5/@actualFigure/@children.0"/>
+        <accessors accessor="getPostConditionClassCompartmentFigure" figure="/0/@figures.0/@descriptors.5/@actualFigure/@children.0"/>
       </descriptors>
       <descriptors name="MatchAttributeFigure">
         <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="MatchAttributeFigure">
@@ -173,13 +167,6 @@
         <accessors accessor="getConcatLeftTermCompartmentFigure" figure="/0/@figures.0/@descriptors.13/@actualFigure/@children.0"/>
         <accessors accessor="getConcatRightTermCompartmentFigure" figure="/0/@figures.0/@descriptors.13/@actualFigure/@children.1"/>
       </descriptors>
-      <descriptors name="TypeOfFigure">
-        <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="TypeOfFigure">
-          <border xsi:type="gmfgraph:MarginBorder">
-            <insets top="5" left="5" bottom="5" right="5"/>
-          </border>
-        </actualFigure>
-      </descriptors>
       <descriptors name="WildcardFigure">
         <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="WildcardFigure">
           <border xsi:type="gmfgraph:MarginBorder">
@@ -194,7 +181,7 @@
           </border>
           <children xsi:type="gmfgraph:Label" name="isNullLabelFigure" text="isNull"/>
         </actualFigure>
-        <accessors accessor="getFigureisNullLabelFigure" figure="/0/@figures.0/@descriptors.16/@actualFigure/@children.0"/>
+        <accessors accessor="getFigureisNullLabelFigure" figure="/0/@figures.0/@descriptors.15/@actualFigure/@children.0"/>
       </descriptors>
       <descriptors name="PositiveIndirectAssociationFigure">
         <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PositiveIndirectAssociationFigure" lineWidth="2" lineKind="LINE_DASH" targetDecoration="/0/@figures.0/@figures.0">
@@ -215,53 +202,56 @@
       <descriptors name="PositiveMatchAssociationLabelFigure">
         <actualFigure xsi:type="gmfgraph:Label" name="PositiveMatchAssociationLabelLabel" text="PositiveMatchAssociation"/>
       </descriptors>
-      <descriptors name="NegativeMatchAssociationFigure">
-        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NegativeMatchAssociationFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.3">
-          <foregroundColor xsi:type="gmfgraph:RGBColor" red="255" green="61" blue="100"/>
-        </actualFigure>
-      </descriptors>
-      <descriptors name="NegativeMatchAssociationLabelFigure">
-        <actualFigure xsi:type="gmfgraph:Label" name="NegativeMatchAssociationLabelLabel" text="NegativeMatchAssociation"/>
-      </descriptors>
       <descriptors name="ApplyAssociationFigure">
-        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ApplyAssociationFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.4"/>
+        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ApplyAssociationFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.3"/>
       </descriptors>
       <descriptors name="ApplyAssociationLabelFigure">
         <actualFigure xsi:type="gmfgraph:Label" name="ApplyAssociationLabelLabel" text="ApplyAssociation"/>
       </descriptors>
-      <descriptors name="PositiveBackwardRestrictionFigure">
-        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PositiveBackwardRestrictionFigure" lineWidth="2" lineKind="LINE_DOT"/>
+      <descriptors name="TraceFigure">
+        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="TraceFigure" lineWidth="2" lineKind="LINE_DOT"/>
       </descriptors>
-      <descriptors name="NegativeBackwardRestrictionFigure">
-        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="NegativeBackwardRestrictionFigure" lineWidth="2" lineKind="LINE_DOT">
-          <foregroundColor xsi:type="gmfgraph:RGBColor" red="255" green="61" blue="100"/>
+      <descriptors name="MatchSameElementsFigure">
+        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MatchSameElementsFigure" lineWidth="2">
+          <foregroundColor xsi:type="gmfgraph:RGBColor" red="153" green="255" blue="153"/>
         </actualFigure>
       </descriptors>
+      <descriptors name="MatchSameElementsLabelFigure">
+        <actualFigure xsi:type="gmfgraph:Label" name="MatchSameElementsLabelLabel" text="equal"/>
+      </descriptors>
+      <descriptors name="ApplySameElementsFigure">
+        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ApplySameElementsFigure" lineWidth="2">
+          <foregroundColor xsi:type="gmfgraph:RGBColor" red="153" green="255" blue="153"/>
+        </actualFigure>
+      </descriptors>
+      <descriptors name="ApplySameElementsLabelFigure">
+        <actualFigure xsi:type="gmfgraph:Label" name="ApplySameElementsLabelLabel" text="equal"/>
+      </descriptors>
       <descriptors name="LayerPreviousSourceFigure">
-        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="LayerPreviousSourceFigure" lineWidth="2" sourceDecoration="/0/@figures.0/@figures.5"/>
+        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="LayerPreviousSourceFigure" lineWidth="2" sourceDecoration="/0/@figures.0/@figures.4"/>
       </descriptors>
       <descriptors name="LayerPreviousSourceExternalLabelFigure">
         <actualFigure xsi:type="gmfgraph:Label" name="LayerPreviousSourceExternalLabel"/>
       </descriptors>
       <descriptors name="AttributeRefAttributeRefFigure">
-        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AttributeRefAttributeRefFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.6"/>
+        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AttributeRefAttributeRefFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.5"/>
       </descriptors>
       <descriptors name="AttributeRefAttributeRefExternalLabelFigure">
         <actualFigure xsi:type="gmfgraph:Label" name="AttributeRefAttributeRefExternalLabel"/>
       </descriptors>
       <descriptors name="ClassRefClassRefFigure">
-        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ClassRefClassRefFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.7"/>
+        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ClassRefClassRefFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.6"/>
       </descriptors>
       <descriptors name="ClassRefClassRefExternalLabelFigure">
         <actualFigure xsi:type="gmfgraph:Label" name="ClassRefClassRefExternalLabel"/>
       </descriptors>
     </figures>
+    <nodes name="GlobalSpecification" figure="GlobalSpecificationFigure"/>
     <nodes name="AnyMatchClass" figure="AnyMatchClassFigure"/>
     <nodes name="ExistsMatchClass" figure="ExistsMatchClassFigure"/>
-    <nodes name="NegativeMatchClass" figure="NegativeMatchClassFigure"/>
-    <nodes name="MatchModel" figure="MatchModelFigure"/>
+    <nodes name="PreCondition" figure="PreConditionFigure"/>
     <nodes name="ApplyClass" figure="ApplyClassFigure"/>
-    <nodes name="ApplyModel" figure="ApplyModelFigure"/>
+    <nodes name="PostCondition" figure="PostConditionFigure"/>
     <nodes name="MatchAttribute" figure="MatchAttributeFigure"/>
     <nodes name="ApplyAttribute" figure="ApplyAttributeFigure"/>
     <nodes name="Rule" figure="RuleFigure"/>
@@ -270,25 +260,23 @@
     <nodes name="AttributeRef" figure="AttributeRefFigure"/>
     <nodes name="ClassRef" figure="ClassRefFigure"/>
     <nodes name="Concat" figure="ConcatFigure"/>
-    <nodes name="TypeOf" figure="TypeOfFigure"/>
     <nodes name="Wildcard" figure="WildcardFigure"/>
     <nodes name="isNull" figure="isNullFigure"/>
     <connections name="PositiveIndirectAssociation" figure="PositiveIndirectAssociationFigure"/>
     <connections name="NegativeIndirectAssociation" figure="NegativeIndirectAssociationFigure"/>
     <connections name="PositiveMatchAssociation" figure="PositiveMatchAssociationFigure"/>
-    <connections name="NegativeMatchAssociation" figure="NegativeMatchAssociationFigure"/>
     <connections name="ApplyAssociation" figure="ApplyAssociationFigure"/>
-    <connections name="PositiveBackwardRestriction" figure="PositiveBackwardRestrictionFigure"/>
-    <connections name="NegativeBackwardRestriction" figure="NegativeBackwardRestrictionFigure"/>
+    <connections name="Trace" figure="TraceFigure"/>
+    <connections name="MatchSameElements" figure="MatchSameElementsFigure"/>
+    <connections name="ApplySameElements" figure="ApplySameElementsFigure"/>
     <connections name="LayerPreviousSource" figure="LayerPreviousSourceFigure"/>
     <connections name="AttributeRefAttributeRef" figure="AttributeRefAttributeRefFigure"/>
     <connections name="ClassRefClassRef" figure="ClassRefClassRefFigure"/>
-    <compartments name="AnyMatchClassAttributeCompartment" figure="AnyMatchClassFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.0/@accessors.1"/>
-    <compartments name="ExistsMatchClassAttributeCompartment" figure="ExistsMatchClassFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.1/@accessors.1"/>
-    <compartments name="NegativeMatchClassAttributeCompartment" figure="NegativeMatchClassFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.2/@accessors.1"/>
-    <compartments name="MatchModelClassCompartment" figure="MatchModelFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.3/@accessors.0"/>
+    <compartments name="AnyMatchClassAttributeCompartment" figure="AnyMatchClassFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.1/@accessors.1"/>
+    <compartments name="ExistsMatchClassAttributeCompartment" figure="ExistsMatchClassFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.2/@accessors.1"/>
+    <compartments name="PreConditionClassCompartment" figure="PreConditionFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.3/@accessors.0"/>
     <compartments name="ApplyClassAttributeCompartment" figure="ApplyClassFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.4/@accessors.1"/>
-    <compartments name="ApplyModelClassCompartment" figure="ApplyModelFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.5/@accessors.0"/>
+    <compartments name="PostConditionClassCompartment" figure="PostConditionFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.5/@accessors.0"/>
     <compartments name="MatchAttributeAttributeValueCompartment" figure="MatchAttributeFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.6/@accessors.1"/>
     <compartments name="ApplyAttributeAttributeValueCompartment" figure="ApplyAttributeFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.7/@accessors.1"/>
     <compartments name="RuleMatchCompartment" figure="RuleFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.8/@accessors.1"/>
@@ -296,28 +284,29 @@
     <compartments name="SequentialHasRuleCompartment" figure="SequentialFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.9/@accessors.1"/>
     <compartments name="ConcatLeftTermCompartment" figure="ConcatFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.13/@accessors.0"/>
     <compartments name="ConcatRightTermCompartment" figure="ConcatFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.13/@accessors.1"/>
-    <labels name="AnyMatchClassLabel" figure="AnyMatchClassFigure" accessor="/0/@figures.0/@descriptors.0/@accessors.0"/>
-    <labels name="ExistsMatchClassLabel" figure="ExistsMatchClassFigure" accessor="/0/@figures.0/@descriptors.1/@accessors.0"/>
-    <labels name="NegativeMatchClassLabel" figure="NegativeMatchClassFigure" accessor="/0/@figures.0/@descriptors.2/@accessors.0"/>
+    <labels name="GlobalSpecificationLabel" figure="GlobalSpecificationFigure" accessor="/0/@figures.0/@descriptors.0/@accessors.0"/>
+    <labels name="AnyMatchClassLabel" figure="AnyMatchClassFigure" accessor="/0/@figures.0/@descriptors.1/@accessors.0"/>
+    <labels name="ExistsMatchClassLabel" figure="ExistsMatchClassFigure" accessor="/0/@figures.0/@descriptors.2/@accessors.0"/>
     <labels name="ApplyClassLabel" figure="ApplyClassFigure" accessor="/0/@figures.0/@descriptors.4/@accessors.0"/>
     <labels name="MatchAttributeLabel" figure="MatchAttributeFigure" accessor="/0/@figures.0/@descriptors.6/@accessors.0"/>
     <labels name="ApplyAttributeLabel" figure="ApplyAttributeFigure" accessor="/0/@figures.0/@descriptors.7/@accessors.0"/>
     <labels name="RuleLabel" figure="RuleFigure" accessor="/0/@figures.0/@descriptors.8/@accessors.0"/>
     <labels name="SequentialLabel" figure="SequentialFigure" accessor="/0/@figures.0/@descriptors.9/@accessors.0"/>
     <labels name="AtomLabel" figure="AtomFigure" elementIcon="false" accessor="/0/@figures.0/@descriptors.10/@accessors.0"/>
-    <labels name="isNullLabel" figure="isNullFigure" elementIcon="false" accessor="/0/@figures.0/@descriptors.16/@accessors.0"/>
+    <labels name="isNullLabel" figure="isNullFigure" elementIcon="false" accessor="/0/@figures.0/@descriptors.15/@accessors.0"/>
     <labels name="NegativeIndirectAssociationLabel" figure="NegativeIndirectAssociationLabelFigure" elementIcon="false"/>
     <labels name="PositiveMatchAssociationLabel" figure="PositiveMatchAssociationLabelFigure" elementIcon="false"/>
-    <labels name="NegativeMatchAssociationLabel" figure="NegativeMatchAssociationLabelFigure" elementIcon="false"/>
     <labels name="ApplyAssociationLabel" figure="ApplyAssociationLabelFigure" elementIcon="false"/>
+    <labels name="MatchSameElementsLabel" figure="MatchSameElementsLabelFigure" elementIcon="false"/>
+    <labels name="ApplySameElementsLabel" figure="ApplySameElementsLabelFigure" elementIcon="false"/>
     <labels name="LayerPreviousSourceExternalLabel" figure="LayerPreviousSourceExternalLabelFigure" elementIcon="false"/>
     <labels name="AttributeRefAttributeRefExternalLabel" figure="AttributeRefAttributeRefExternalLabelFigure" elementIcon="false"/>
     <labels name="ClassRefClassRefExternalLabel" figure="ClassRefClassRefExternalLabelFigure" elementIcon="false"/>
   </gmfgraph:Canvas>
-  <gmfgraph:Label name="MatchModelLabelFigure" text="MatchModel">
+  <gmfgraph:Label name="PreConditionLabelFigure" text="PreCondition">
     <maximumSize dx="10000" dy="50"/>
   </gmfgraph:Label>
-  <gmfgraph:Label name="ApplyModelLabelFigure" text="ApplyModel">
+  <gmfgraph:Label name="PostConditionLabelFigure" text="PostCondition">
     <maximumSize dx="10000" dy="50"/>
   </gmfgraph:Label>
   <gmfgraph:Label name="AttributeRefLabelFigure" text="AttributeRef"/>
@@ -325,6 +314,5 @@
   <gmfgraph:Label name="ConcatLabelFigure" text="Concat">
     <maximumSize dx="10000" dy="50"/>
   </gmfgraph:Label>
-  <gmfgraph:Label name="TypeOfLabelFigure" text="TypeOf"/>
   <gmfgraph:Label name="WildcardLabelFigure" text="Wildcard"/>
 </xmi:XMI>
