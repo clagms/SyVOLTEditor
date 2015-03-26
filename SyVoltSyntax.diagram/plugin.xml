@@ -258,8 +258,8 @@
          </object>
          <context viewClass="org.eclipse.gmf.runtime.notation.Node" containerViews="referencing-diagrams"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Syvolt"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2001,2002,3001,3030,3031,3004,3005,3006,3032,3033,3034,3011,3013,3014,3015,3016,3019,3020,3021,3022,3023,3024,3025,3026,3027,3028,3029"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001,4002,4003,4011,4012,4005,4013,4008,4009,4010"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2004,2002,3037,3031,3004,3005,3006,3032,3038,3034,3011,3013,3014,3015,3016,3019,3020,3021,3022,3023,3024,3025,3026,3027,3028,3029"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4001,4002,4003,4011,4012,4005,4013,4009,4010"/>
       </viewProvider>
    </extension>
 
@@ -271,16 +271,16 @@
             <method name="getType()" value="Syvolt"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-nodes">
-            <method name="getType()" value="2001,2002,3001,3030,3031,3004,3005,3006,3032,3033,3034,3011,3013,3014,3015,3016,3019,3020,3021,3022,3023,3024,3025,3026,3027,3028,3029"/>
+            <method name="getType()" value="2004,2002,3037,3031,3004,3005,3006,3032,3038,3034,3011,3013,3014,3015,3016,3019,3020,3021,3022,3023,3024,3025,3026,3027,3028,3029"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
-            <method name="getType()" value="4001,4002,4003,4011,4012,4005,4013,4008,4009,4010"/>
+            <method name="getType()" value="4001,4002,4003,4011,4012,4005,4013,4009,4010"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
-            <method name="getType()" value="5013,5017,5012,5014,5003,5001,5002,5015,5016,5010,5007,5008,5009"/>
+            <method name="getType()" value="5019,5017,5014,5003,5001,5002,5015,5016,5010,5007,5008,5009"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-compartments">
-            <method name="getType()" value="7001,7002,7003,7018,7019,7006,7020,7021,7022,7011,7012,7013,7014,7015,7016,7017"/>
+            <method name="getType()" value="7027,7028,7029,7019,7006,7020,7030,7022,7011,7012,7013,7014,7015,7016,7017"/>
          </object>
          <context views="generated-diagram,generated-nodes,generated-links,generated-labels,generated-compartments"/>
       </editpartProvider>
@@ -294,25 +294,20 @@
          <object class="syvolt.diagram.edit.parts.TransformationModelEditPart" id="TransformationModel_1000"/>
          <context elements="TransformationModel_1000"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="syvolt.diagram.providers.assistants.SyvoltModelingAssistantProviderOfSequentialEditPart">
+            <modelingAssistantProvider class="syvolt.diagram.providers.assistants.SyvoltModelingAssistantProviderOfAtomicContractEditPart">
          <Priority name="Lowest"/>
-         <object class="syvolt.diagram.edit.parts.SequentialEditPart" id="Sequential_2001"/>
-         <context elements="Sequential_2001"/>
+         <object class="syvolt.diagram.edit.parts.AtomicContractEditPart" id="AtomicContract_2004"/>
+         <context elements="AtomicContract_2004"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="syvolt.diagram.providers.assistants.SyvoltModelingAssistantProviderOfGlobalSpecificationEditPart">
          <Priority name="Lowest"/>
          <object class="syvolt.diagram.edit.parts.GlobalSpecificationEditPart" id="GlobalSpecification_2002"/>
          <context elements="GlobalSpecification_2002"/>
       </modelingAssistantProvider>
-            <modelingAssistantProvider class="syvolt.diagram.providers.assistants.SyvoltModelingAssistantProviderOfRuleEditPart">
-         <Priority name="Lowest"/>
-         <object class="syvolt.diagram.edit.parts.RuleEditPart" id="Rule_3001"/>
-         <context elements="Rule_3001"/>
-      </modelingAssistantProvider>
             <modelingAssistantProvider class="syvolt.diagram.providers.assistants.SyvoltModelingAssistantProviderOfPreConditionEditPart">
          <Priority name="Lowest"/>
-         <object class="syvolt.diagram.edit.parts.PreConditionEditPart" id="PreCondition_3030"/>
-         <context elements="PreCondition_3030"/>
+         <object class="syvolt.diagram.edit.parts.PreConditionEditPart" id="PreCondition_3037"/>
+         <context elements="PreCondition_3037"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="syvolt.diagram.providers.assistants.SyvoltModelingAssistantProviderOfAnyMatchClassEditPart">
          <Priority name="Lowest"/>
@@ -341,8 +336,8 @@
       </modelingAssistantProvider>
             <modelingAssistantProvider class="syvolt.diagram.providers.assistants.SyvoltModelingAssistantProviderOfPostConditionEditPart">
          <Priority name="Lowest"/>
-         <object class="syvolt.diagram.edit.parts.PostConditionEditPart" id="PostCondition_3033"/>
-         <context elements="PostCondition_3033"/>
+         <object class="syvolt.diagram.edit.parts.PostConditionEditPart" id="PostCondition_3038"/>
+         <context elements="PostCondition_3038"/>
       </modelingAssistantProvider>
             <modelingAssistantProvider class="syvolt.diagram.providers.assistants.SyvoltModelingAssistantProviderOfApplyClassEditPart">
          <Priority name="Lowest"/>
@@ -452,7 +447,7 @@
       <decoratorProvider class="syvolt.diagram.providers.SyvoltShortcutsDecoratorProvider">
          <Priority name="Lowest"/>
          <object class="org.eclipse.gmf.runtime.notation.Node(org.eclipse.gmf.runtime.notation)" id="generated-top-nodes">
-            <method name="getType()" value="2001,2002"/>
+            <method name="getType()" value="2004,2002"/>
          </object>
          <context decoratorTargets="generated-top-nodes"/>
       </decoratorProvider>
@@ -472,12 +467,12 @@
       </metamodel>
       <metamodel nsURI="http://syvolt/2.0">
          <metamodelType
-               id="SyVoltSyntax.diagram.Sequential_2001"
-               name="%metatype.name.Sequential_2001"
+               id="SyVoltSyntax.diagram.AtomicContract_2004"
+               name="%metatype.name.AtomicContract_2004"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Sequential"
-               edithelper="syvolt.diagram.edit.helpers.SequentialEditHelper">
-            <param name="semanticHint" value="2001"/>
+               eclass="AtomicContract"
+               edithelper="syvolt.diagram.edit.helpers.AtomicContractEditHelper">
+            <param name="semanticHint" value="2004"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://syvolt/2.0">
@@ -492,22 +487,12 @@
       </metamodel>
       <metamodel nsURI="http://syvolt/2.0">
          <metamodelType
-               id="SyVoltSyntax.diagram.Rule_3001"
-               name="%metatype.name.Rule_3001"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
-               eclass="Rule"
-               edithelper="syvolt.diagram.edit.helpers.RuleEditHelper">
-            <param name="semanticHint" value="3001"/>
-         </metamodelType>
-      </metamodel>
-      <metamodel nsURI="http://syvolt/2.0">
-         <metamodelType
-               id="SyVoltSyntax.diagram.PreCondition_3030"
-               name="%metatype.name.PreCondition_3030"
+               id="SyVoltSyntax.diagram.PreCondition_3037"
+               name="%metatype.name.PreCondition_3037"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="PreCondition"
                edithelper="syvolt.diagram.edit.helpers.PreConditionEditHelper">
-            <param name="semanticHint" value="3030"/>
+            <param name="semanticHint" value="3037"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://syvolt/2.0">
@@ -562,12 +547,12 @@
       </metamodel>
       <metamodel nsURI="http://syvolt/2.0">
          <metamodelType
-               id="SyVoltSyntax.diagram.PostCondition_3033"
-               name="%metatype.name.PostCondition_3033"
+               id="SyVoltSyntax.diagram.PostCondition_3038"
+               name="%metatype.name.PostCondition_3038"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
                eclass="PostCondition"
                edithelper="syvolt.diagram.edit.helpers.PostConditionEditHelper">
-            <param name="semanticHint" value="3033"/>
+            <param name="semanticHint" value="3038"/>
          </metamodelType>
       </metamodel>
       <metamodel nsURI="http://syvolt/2.0">
@@ -801,15 +786,6 @@
       </metamodel>
       <metamodel nsURI="http://syvolt/2.0">
          <specializationType
-               id="SyVoltSyntax.diagram.LayerPreviousSource_4008"
-               name="%metatype.name.LayerPreviousSource_4008"
-               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
-            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
-            <param name="semanticHint" value="4008"/>
-         </specializationType>
-      </metamodel>
-      <metamodel nsURI="http://syvolt/2.0">
-         <specializationType
                id="SyVoltSyntax.diagram.AttributeRefAttributeRef_4009"
                name="%metatype.name.AttributeRefAttributeRef_4009"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
@@ -839,16 +815,15 @@
       </clientContext> 
       <binding context="SyVoltSyntax.diagram.TypeContext">
          <elementType ref="SyVoltSyntax.diagram.TransformationModel_1000"/>
-         <elementType ref="SyVoltSyntax.diagram.Sequential_2001"/>
+         <elementType ref="SyVoltSyntax.diagram.AtomicContract_2004"/>
          <elementType ref="SyVoltSyntax.diagram.GlobalSpecification_2002"/>
-         <elementType ref="SyVoltSyntax.diagram.Rule_3001"/>
-         <elementType ref="SyVoltSyntax.diagram.PreCondition_3030"/>
+         <elementType ref="SyVoltSyntax.diagram.PreCondition_3037"/>
          <elementType ref="SyVoltSyntax.diagram.AnyMatchClass_3031"/>
          <elementType ref="SyVoltSyntax.diagram.MatchAttribute_3004"/>
          <elementType ref="SyVoltSyntax.diagram.Atom_3005"/>
          <elementType ref="SyVoltSyntax.diagram.IsNull_3006"/>
          <elementType ref="SyVoltSyntax.diagram.ExistsMatchClass_3032"/>
-         <elementType ref="SyVoltSyntax.diagram.PostCondition_3033"/>
+         <elementType ref="SyVoltSyntax.diagram.PostCondition_3038"/>
          <elementType ref="SyVoltSyntax.diagram.ApplyClass_3034"/>
          <elementType ref="SyVoltSyntax.diagram.ApplyAttribute_3011"/>
          <elementType ref="SyVoltSyntax.diagram.Atom_3013"/>
@@ -873,7 +848,6 @@
          <elementType ref="SyVoltSyntax.diagram.ApplySameElements_4012"/>
          <elementType ref="SyVoltSyntax.diagram.ApplyAssociation_4005"/>
          <elementType ref="SyVoltSyntax.diagram.Trace_4013"/>
-         <elementType ref="SyVoltSyntax.diagram.LayerPreviousSource_4008"/>
          <elementType ref="SyVoltSyntax.diagram.AttributeRefAttributeRef_4009"/>
          <elementType ref="SyVoltSyntax.diagram.ClassRefClassRef_4010"/>
          <advice ref="org.eclipse.gmf.runtime.diagram.core.advice.notationDepdendents"/>

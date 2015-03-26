@@ -4,35 +4,25 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:trace="http://www.eclipse.org/gmf/2006/Trace">
   <nodeTraces
-      visualID="2001"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Sequential') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'TransformationModel') and _containmentMF_.name = 'source')">
-    <nodeLabelTraces
-        visualID="5013"
-        queryText="true"/>
-    <compartmentTraces
-        visualID="7001"
-        queryText="true"/>
-  </nodeTraces>
-  <nodeTraces
       visualID="2002"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'GlobalSpecification') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'TransformationModel') and _containmentMF_.name = 'specification')">
     <nodeLabelTraces
         visualID="5017"
         queryText="true"/>
   </nodeTraces>
-  <childNodeTraces
-      visualID="3001"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Rule') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Layer') and _containmentMF_.name = 'hasRule')">
+  <nodeTraces
+      visualID="2004"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'AtomicContract') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'TransformationModel') and _containmentMF_.name = 'hasProperty')">
     <nodeLabelTraces
-        visualID="5012"
+        visualID="5019"
         queryText="true"/>
     <compartmentTraces
-        visualID="7002"
+        visualID="7027"
         queryText="true"/>
     <compartmentTraces
-        visualID="7003"
+        visualID="7028"
         queryText="true"/>
-  </childNodeTraces>
+  </nodeTraces>
   <childNodeTraces
       visualID="3004"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'MatchAttribute') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'MatchClass') and _containmentMF_.name = 'attribute')">
@@ -146,13 +136,6 @@
       visualID="3029"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Wildcard') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'ApplyAttribute') and _containmentMF_.name = 'attributeValue')"/>
   <childNodeTraces
-      visualID="3030"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'PreCondition') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Rule') and _containmentMF_.name = 'match')">
-    <compartmentTraces
-        visualID="7018"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
       visualID="3031"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'AnyMatchClass') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'PreCondition') and _containmentMF_.name = 'class')">
     <nodeLabelTraces
@@ -173,13 +156,6 @@
         queryText="true"/>
   </childNodeTraces>
   <childNodeTraces
-      visualID="3033"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'PostCondition') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Rule') and _containmentMF_.name = 'apply')">
-    <compartmentTraces
-        visualID="7021"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
       visualID="3034"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'ApplyClass') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'PostCondition') and _containmentMF_.name = 'class')">
     <nodeLabelTraces
@@ -187,6 +163,20 @@
         queryText="true"/>
     <compartmentTraces
         visualID="7022"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3037"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'PreCondition') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'AtomicContract') and _containmentMF_.name = 'match')">
+    <compartmentTraces
+        visualID="7029"
+        queryText="true"/>
+  </childNodeTraces>
+  <childNodeTraces
+      visualID="3038"
+      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'PostCondition') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'AtomicContract') and _containmentMF_.name = 'apply')">
+    <compartmentTraces
+        visualID="7030"
         queryText="true"/>
   </childNodeTraces>
   <linkTraces
@@ -211,13 +201,6 @@
       queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'ApplyAssociation')">
     <linkLabelTraces
         visualID="6004"
-        queryText="true"/>
-  </linkTraces>
-  <linkTraces
-      visualID="4008"
-      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Layer') and _feature_.name = 'previousSource')">
-    <linkLabelTraces
-        visualID="6005"
         queryText="true"/>
   </linkTraces>
   <linkTraces

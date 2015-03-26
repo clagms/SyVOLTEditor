@@ -6,7 +6,6 @@
       <figures xsi:type="gmfgraph:PolylineDecoration" name="NegativeIndirectAssociationFigureTargetDecoration"/>
       <figures xsi:type="gmfgraph:PolylineDecoration" name="PositiveMatchAssociationFigureTargetDecoration"/>
       <figures xsi:type="gmfgraph:PolylineDecoration" name="ApplyAssociationFigureTargetDecoration"/>
-      <figures xsi:type="gmfgraph:PolylineDecoration" name="LayerPreviousSourceFigureSourceDecoration"/>
       <figures xsi:type="gmfgraph:PolylineDecoration" name="AttributeRefAttributeRefFigureTargetDecoration"/>
       <figures xsi:type="gmfgraph:PolylineDecoration" name="ClassRefClassRefFigureTargetDecoration"/>
       <descriptors name="GlobalSpecificationFigure">
@@ -104,34 +103,20 @@
         <accessors accessor="getFigureApplyAttributeLabelFigure" figure="/0/@figures.0/@descriptors.7/@actualFigure/@children.0"/>
         <accessors accessor="getApplyAttributeAttributeValueCompartmentFigure" figure="/0/@figures.0/@descriptors.7/@actualFigure/@children.1"/>
       </descriptors>
-      <descriptors name="RuleFigure">
-        <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="RuleFigure">
+      <descriptors name="AtomicContractFigure">
+        <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AtomicContractFigure">
           <border xsi:type="gmfgraph:MarginBorder">
             <insets top="5" left="5" bottom="5" right="5"/>
           </border>
-          <children xsi:type="gmfgraph:Label" name="RuleLabelFigure" text="Rule">
+          <children xsi:type="gmfgraph:Label" name="AtomicContractLabelFigure" text="AtomicContract">
             <maximumSize dx="10000" dy="50"/>
           </children>
-          <children xsi:type="gmfgraph:Rectangle" name="RuleMatchCompartmentFigure" outline="false"/>
-          <children xsi:type="gmfgraph:Rectangle" name="RuleApplyCompartmentFigure" outline="false"/>
+          <children xsi:type="gmfgraph:Rectangle" name="AtomicContractMatchCompartmentFigure" outline="false"/>
+          <children xsi:type="gmfgraph:Rectangle" name="AtomicContractApplyCompartmentFigure" outline="false"/>
         </actualFigure>
-        <accessors accessor="getFigureRuleLabelFigure" figure="/0/@figures.0/@descriptors.8/@actualFigure/@children.0"/>
-        <accessors accessor="getRuleMatchCompartmentFigure" figure="/0/@figures.0/@descriptors.8/@actualFigure/@children.1"/>
-        <accessors accessor="getRuleApplyCompartmentFigure" figure="/0/@figures.0/@descriptors.8/@actualFigure/@children.2"/>
-      </descriptors>
-      <descriptors name="SequentialFigure">
-        <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="SequentialFigure">
-          <backgroundColor xsi:type="gmfgraph:RGBColor" red="153" green="204" blue="255"/>
-          <border xsi:type="gmfgraph:MarginBorder">
-            <insets top="5" left="5" bottom="5" right="5"/>
-          </border>
-          <children xsi:type="gmfgraph:Label" name="SequentialLabelFigure" text="Sequential">
-            <maximumSize dx="10000" dy="50"/>
-          </children>
-          <children xsi:type="gmfgraph:Rectangle" name="SequentialHasRuleCompartmentFigure" outline="false"/>
-        </actualFigure>
-        <accessors accessor="getFigureSequentialLabelFigure" figure="/0/@figures.0/@descriptors.9/@actualFigure/@children.0"/>
-        <accessors accessor="getSequentialHasRuleCompartmentFigure" figure="/0/@figures.0/@descriptors.9/@actualFigure/@children.1"/>
+        <accessors accessor="getFigureAtomicContractLabelFigure" figure="/0/@figures.0/@descriptors.8/@actualFigure/@children.0"/>
+        <accessors accessor="getAtomicContractMatchCompartmentFigure" figure="/0/@figures.0/@descriptors.8/@actualFigure/@children.1"/>
+        <accessors accessor="getAtomicContractApplyCompartmentFigure" figure="/0/@figures.0/@descriptors.8/@actualFigure/@children.2"/>
       </descriptors>
       <descriptors name="AtomFigure">
         <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AtomFigure">
@@ -140,7 +125,7 @@
           </border>
           <children xsi:type="gmfgraph:Label" name="AtomLabelFigure" text="Atom"/>
         </actualFigure>
-        <accessors accessor="getFigureAtomLabelFigure" figure="/0/@figures.0/@descriptors.10/@actualFigure/@children.0"/>
+        <accessors accessor="getFigureAtomLabelFigure" figure="/0/@figures.0/@descriptors.9/@actualFigure/@children.0"/>
       </descriptors>
       <descriptors name="AttributeRefFigure">
         <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AttributeRefFigure">
@@ -164,8 +149,8 @@
           <children xsi:type="gmfgraph:Rectangle" name="ConcatLeftTermCompartmentFigure" outline="false"/>
           <children xsi:type="gmfgraph:Rectangle" name="ConcatRightTermCompartmentFigure" outline="false"/>
         </actualFigure>
-        <accessors accessor="getConcatLeftTermCompartmentFigure" figure="/0/@figures.0/@descriptors.13/@actualFigure/@children.0"/>
-        <accessors accessor="getConcatRightTermCompartmentFigure" figure="/0/@figures.0/@descriptors.13/@actualFigure/@children.1"/>
+        <accessors accessor="getConcatLeftTermCompartmentFigure" figure="/0/@figures.0/@descriptors.12/@actualFigure/@children.0"/>
+        <accessors accessor="getConcatRightTermCompartmentFigure" figure="/0/@figures.0/@descriptors.12/@actualFigure/@children.1"/>
       </descriptors>
       <descriptors name="WildcardFigure">
         <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="WildcardFigure">
@@ -181,7 +166,7 @@
           </border>
           <children xsi:type="gmfgraph:Label" name="isNullLabelFigure" text="isNull"/>
         </actualFigure>
-        <accessors accessor="getFigureisNullLabelFigure" figure="/0/@figures.0/@descriptors.15/@actualFigure/@children.0"/>
+        <accessors accessor="getFigureisNullLabelFigure" figure="/0/@figures.0/@descriptors.14/@actualFigure/@children.0"/>
       </descriptors>
       <descriptors name="PositiveIndirectAssociationFigure">
         <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PositiveIndirectAssociationFigure" lineWidth="2" lineKind="LINE_DASH" targetDecoration="/0/@figures.0/@figures.0">
@@ -227,20 +212,14 @@
       <descriptors name="ApplySameElementsLabelFigure">
         <actualFigure xsi:type="gmfgraph:Label" name="ApplySameElementsLabelLabel" text="equal"/>
       </descriptors>
-      <descriptors name="LayerPreviousSourceFigure">
-        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="LayerPreviousSourceFigure" lineWidth="2" sourceDecoration="/0/@figures.0/@figures.4"/>
-      </descriptors>
-      <descriptors name="LayerPreviousSourceExternalLabelFigure">
-        <actualFigure xsi:type="gmfgraph:Label" name="LayerPreviousSourceExternalLabel"/>
-      </descriptors>
       <descriptors name="AttributeRefAttributeRefFigure">
-        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AttributeRefAttributeRefFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.5"/>
+        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AttributeRefAttributeRefFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.4"/>
       </descriptors>
       <descriptors name="AttributeRefAttributeRefExternalLabelFigure">
         <actualFigure xsi:type="gmfgraph:Label" name="AttributeRefAttributeRefExternalLabel"/>
       </descriptors>
       <descriptors name="ClassRefClassRefFigure">
-        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ClassRefClassRefFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.6"/>
+        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ClassRefClassRefFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.5"/>
       </descriptors>
       <descriptors name="ClassRefClassRefExternalLabelFigure">
         <actualFigure xsi:type="gmfgraph:Label" name="ClassRefClassRefExternalLabel"/>
@@ -254,8 +233,7 @@
     <nodes name="PostCondition" figure="PostConditionFigure"/>
     <nodes name="MatchAttribute" figure="MatchAttributeFigure"/>
     <nodes name="ApplyAttribute" figure="ApplyAttributeFigure"/>
-    <nodes name="Rule" figure="RuleFigure"/>
-    <nodes name="Sequential" figure="SequentialFigure"/>
+    <nodes name="AtomicContract" figure="AtomicContractFigure"/>
     <nodes name="Atom" figure="AtomFigure"/>
     <nodes name="AttributeRef" figure="AttributeRefFigure"/>
     <nodes name="ClassRef" figure="ClassRefFigure"/>
@@ -269,7 +247,6 @@
     <connections name="Trace" figure="TraceFigure"/>
     <connections name="MatchSameElements" figure="MatchSameElementsFigure"/>
     <connections name="ApplySameElements" figure="ApplySameElementsFigure"/>
-    <connections name="LayerPreviousSource" figure="LayerPreviousSourceFigure"/>
     <connections name="AttributeRefAttributeRef" figure="AttributeRefAttributeRefFigure"/>
     <connections name="ClassRefClassRef" figure="ClassRefClassRefFigure"/>
     <compartments name="AnyMatchClassAttributeCompartment" figure="AnyMatchClassFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.1/@accessors.1"/>
@@ -279,27 +256,24 @@
     <compartments name="PostConditionClassCompartment" figure="PostConditionFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.5/@accessors.0"/>
     <compartments name="MatchAttributeAttributeValueCompartment" figure="MatchAttributeFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.6/@accessors.1"/>
     <compartments name="ApplyAttributeAttributeValueCompartment" figure="ApplyAttributeFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.7/@accessors.1"/>
-    <compartments name="RuleMatchCompartment" figure="RuleFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.8/@accessors.1"/>
-    <compartments name="RuleApplyCompartment" figure="RuleFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.8/@accessors.2"/>
-    <compartments name="SequentialHasRuleCompartment" figure="SequentialFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.9/@accessors.1"/>
-    <compartments name="ConcatLeftTermCompartment" figure="ConcatFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.13/@accessors.0"/>
-    <compartments name="ConcatRightTermCompartment" figure="ConcatFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.13/@accessors.1"/>
+    <compartments name="AtomicContractMatchCompartment" figure="AtomicContractFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.8/@accessors.1"/>
+    <compartments name="AtomicContractApplyCompartment" figure="AtomicContractFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.8/@accessors.2"/>
+    <compartments name="ConcatLeftTermCompartment" figure="ConcatFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.12/@accessors.0"/>
+    <compartments name="ConcatRightTermCompartment" figure="ConcatFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.12/@accessors.1"/>
     <labels name="GlobalSpecificationLabel" figure="GlobalSpecificationFigure" accessor="/0/@figures.0/@descriptors.0/@accessors.0"/>
     <labels name="AnyMatchClassLabel" figure="AnyMatchClassFigure" accessor="/0/@figures.0/@descriptors.1/@accessors.0"/>
     <labels name="ExistsMatchClassLabel" figure="ExistsMatchClassFigure" accessor="/0/@figures.0/@descriptors.2/@accessors.0"/>
     <labels name="ApplyClassLabel" figure="ApplyClassFigure" accessor="/0/@figures.0/@descriptors.4/@accessors.0"/>
     <labels name="MatchAttributeLabel" figure="MatchAttributeFigure" accessor="/0/@figures.0/@descriptors.6/@accessors.0"/>
     <labels name="ApplyAttributeLabel" figure="ApplyAttributeFigure" accessor="/0/@figures.0/@descriptors.7/@accessors.0"/>
-    <labels name="RuleLabel" figure="RuleFigure" accessor="/0/@figures.0/@descriptors.8/@accessors.0"/>
-    <labels name="SequentialLabel" figure="SequentialFigure" accessor="/0/@figures.0/@descriptors.9/@accessors.0"/>
-    <labels name="AtomLabel" figure="AtomFigure" elementIcon="false" accessor="/0/@figures.0/@descriptors.10/@accessors.0"/>
-    <labels name="isNullLabel" figure="isNullFigure" elementIcon="false" accessor="/0/@figures.0/@descriptors.15/@accessors.0"/>
+    <labels name="AtomicContractLabel" figure="AtomicContractFigure" accessor="/0/@figures.0/@descriptors.8/@accessors.0"/>
+    <labels name="AtomLabel" figure="AtomFigure" elementIcon="false" accessor="/0/@figures.0/@descriptors.9/@accessors.0"/>
+    <labels name="isNullLabel" figure="isNullFigure" elementIcon="false" accessor="/0/@figures.0/@descriptors.14/@accessors.0"/>
     <labels name="NegativeIndirectAssociationLabel" figure="NegativeIndirectAssociationLabelFigure" elementIcon="false"/>
     <labels name="PositiveMatchAssociationLabel" figure="PositiveMatchAssociationLabelFigure" elementIcon="false"/>
     <labels name="ApplyAssociationLabel" figure="ApplyAssociationLabelFigure" elementIcon="false"/>
     <labels name="MatchSameElementsLabel" figure="MatchSameElementsLabelFigure" elementIcon="false"/>
     <labels name="ApplySameElementsLabel" figure="ApplySameElementsLabelFigure" elementIcon="false"/>
-    <labels name="LayerPreviousSourceExternalLabel" figure="LayerPreviousSourceExternalLabelFigure" elementIcon="false"/>
     <labels name="AttributeRefAttributeRefExternalLabel" figure="AttributeRefAttributeRefExternalLabelFigure" elementIcon="false"/>
     <labels name="ClassRefClassRefExternalLabel" figure="ClassRefClassRefExternalLabelFigure" elementIcon="false"/>
   </gmfgraph:Canvas>

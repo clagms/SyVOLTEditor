@@ -48,6 +48,15 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
+          title="AtomicContract"
+          description="Create Property.">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
           title="AttributeRef"
           description="Copy attribute value.">
         <smallIcon
@@ -93,15 +102,6 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Layer"
-          description="Create a new Layer.">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
           title="MatchAttribute"
           description="Match an attribute.">
         <smallIcon
@@ -122,15 +122,6 @@
           xsi:type="gmftool:CreationTool"
           title="PreCondition"
           description="Match pattern. Place inside Rule.">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="Rule"
-          description="Create Rule. Place inside Layer.">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -226,15 +217,6 @@
           xsi:type="gmftool:CreationTool"
           title="PositiveMatchAssociation"
           description="Existing direct association.">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="PreviousSource"
-          description="Controls the flow of the transformation. Connects Layers/FilePorts.">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon

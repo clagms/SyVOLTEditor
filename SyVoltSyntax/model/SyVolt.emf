@@ -4,26 +4,13 @@ package syvolt;
 
 @gmf.diagram(foo="bar")
 class TransformationModel {
-  val AbstractSource[1] source;
+  val AtomicContract[*] hasProperty;
   val GlobalSpecification[1] specification;
 }
 
 @gmf.node(label="value", tool.description="Create a specification.")
 class GlobalSpecification {
 	attr String value;
-}
-
-@gmf.node(foo="bar")
-abstract class Layer extends AbstractSource {
-  attr String description = "Layer";
-
-  @gmf.link(source.decoration="arrow", width="2", tool.description="Controls the flow of the transformation. Connects Layers/FilePorts.")
-  ref AbstractSource[*] previousSource;
-  attr String outputFilePathURI;
-
-  @gmf.compartment(foo="bar")
-  val Rule[*] hasRule;
-  attr String groupName;
 }
 
 @gmf.node(foo="bar")
@@ -121,14 +108,10 @@ class ApplyAttribute extends Attribute {
   val Term attributeValue;
 }
 
-@gmf.node(foo="bar")
-abstract class AbstractSource {
-  attr String name = "";
-}
 
-@gmf.node(label="description", tool.description="Create Rule. Place inside Layer.")
-class Rule {
-  attr String description;
+@gmf.node(label="name", tool.description="Create Property.")
+class AtomicContract {
+  attr String name;
 
   @gmf.compartment(foo="bar")
   val PreCondition[+] match;
@@ -141,10 +124,6 @@ class Rule {
 
 @gmf.link(foo="bar", tool.description="Create a generator-generated restriction.")
 class Trace extends AbstractTemporalRelation {
-}
-
-@gmf.node(label="description", color="153,204,255", tool.name="Layer", tool.description="Create a new Layer.")
-class Sequential extends Layer {
 }
 
 @gmf.node(foo="bar")
