@@ -10,8 +10,8 @@
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="hasProperty" upperBound="-1"
         eType="#//AtomicContract" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="specification" lowerBound="1"
-        eType="#//GlobalSpecification" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specification" eType="#//GlobalSpecification"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="GlobalSpecification">
     <eAnnotations source="gmf.node">
@@ -22,6 +22,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MatchClass" abstract="true" eSuperTypes="#//AbstractClass">
     <eAnnotations source="gmf.node">
+      <details key="label" value="className"/>
       <details key="foo" value="bar"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" upperBound="-1"
@@ -98,6 +99,7 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ApplyClass" eSuperTypes="#//AbstractClass">
     <eAnnotations source="gmf.node">
+      <details key="label" value="className"/>
       <details key="foo" value="bar"/>
       <details key="tool.description" value="Generates a class in the apply pattern."/>
     </eAnnotations>
@@ -107,7 +109,6 @@
         <details key="foo" value="bar"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="groupName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="PostCondition">
     <eAnnotations source="gmf.node">
@@ -141,9 +142,8 @@
     <eAnnotations source="gmf.node">
       <details key="label" value="className"/>
     </eAnnotations>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="packageName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="className" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="packageName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="allowInheritance" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"
         defaultValueLiteral="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
@@ -280,7 +280,6 @@
       <details key="label" value="attributeName"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="attributeName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
         iD="true"/>
   </eClassifiers>

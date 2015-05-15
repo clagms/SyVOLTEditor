@@ -5,17 +5,16 @@ package syvolt;
 @gmf.diagram(foo="bar")
 class TransformationModel {
   val AtomicContract[*] hasProperty;
-  val GlobalSpecification[1] specification;
+  val GlobalSpecification specification;
 }
 
 @gmf.node(label="value", tool.description="Create a specification.")
 class GlobalSpecification {
-	attr String value;
+  attr String value;
 }
 
-@gmf.node(foo="bar")
+@gmf.node(label="className",foo="bar")
 abstract class MatchClass extends AbstractClass {
-
   @gmf.compartment(foo="bar")
   val MatchAttribute[*] attribute;
 }
@@ -58,12 +57,11 @@ class NegativeIndirectAssociation extends MatchAssociation {
 class PositiveMatchAssociation extends MatchAssociation {
 }
 
-@gmf.node(foo="bar", tool.description="Generates a class in the apply pattern.")
+@gmf.node(label="className", foo="bar", tool.description="Generates a class in the apply pattern.")
 class ApplyClass extends AbstractClass {
 
   @gmf.compartment(foo="bar")
   val ApplyAttribute[*] attribute;
-  attr String groupName;
 }
 
 @gmf.node(color="255,255,163", tool.description="Apply pattern. Place inside Rule.", label.placement="none")
@@ -82,9 +80,8 @@ class ApplyAssociation extends Association {
 
 @gmf.node(label="className")
 abstract class AbstractClass {
-  attr String description;
-  attr String packageName;
   attr String className;
+  attr String packageName;
   attr boolean allowInheritance = true;
   id attr String ~id;
 }
@@ -107,7 +104,6 @@ class ApplyAttribute extends Attribute {
   @gmf.compartment(foo="bar")
   val Term attributeValue;
 }
-
 
 @gmf.node(label="name", tool.description="Create Property.")
 class AtomicContract {
@@ -172,7 +168,6 @@ class Wildcard extends Term {
 @gmf.node(label="attributeName")
 abstract class Attribute {
   attr String attributeName;
-  attr String description;
   id attr String ~id;
 }
 
