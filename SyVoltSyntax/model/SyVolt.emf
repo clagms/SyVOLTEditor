@@ -11,6 +11,8 @@ class TransformationModel {
 @gmf.node(label="value", tool.description="Create a specification.")
 class GlobalSpecification {
   attr String value;
+  
+  val Expression abstractValue;
 }
 
 @gmf.node(label="className",foo="bar")
@@ -116,6 +118,8 @@ class AtomicContract {
   val PostCondition[1] apply;
   val AbstractTemporalRelation[*] backwards;
   val AbstractAttributeRelation[*] attributeRelations;
+  
+  ref AtomicContract evaluatesBefore;
 }
 
 @gmf.link(foo="bar", tool.description="Create a generator-generated restriction.")
@@ -199,3 +203,24 @@ class MatchSameElements extends MatchAssociation {
 class ApplySameElements extends ApplyAssociation {
 }
 
+
+abstract class Expression {
+}
+
+class ContractReference extends Expression {
+  ref AtomicContract contract;
+}
+
+abstract class Bidirectional extends Expression {
+  val Expression left;
+  val Expression right;
+}
+
+class And extends Bidirectional {
+}
+
+class Or extends Bidirectional {
+}
+
+class Implies extends Bidirectional {
+}

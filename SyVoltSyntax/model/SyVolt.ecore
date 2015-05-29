@@ -19,6 +19,8 @@
       <details key="tool.description" value="Create a specification."/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="abstractValue" eType="#//Expression"
+        containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MatchClass" abstract="true" eSuperTypes="#//AbstractClass">
     <eAnnotations source="gmf.node">
@@ -202,6 +204,7 @@
         eType="#//AbstractTemporalRelation" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="attributeRelations" upperBound="-1"
         eType="#//AbstractAttributeRelation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="evaluatesBefore" eType="#//AtomicContract"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Trace" eSuperTypes="#//AbstractTemporalRelation">
     <eAnnotations source="gmf.link">
@@ -336,4 +339,17 @@
       <details key="label.text" value="equal"/>
     </eAnnotations>
   </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Expression" abstract="true"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ContractReference" eSuperTypes="#//Expression">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contract" eType="#//AtomicContract"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Bidirectional" abstract="true" eSuperTypes="#//Expression">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="left" eType="#//Expression"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="right" eType="#//Expression"
+        containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="And" eSuperTypes="#//Bidirectional"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Or" eSuperTypes="#//Bidirectional"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Implies" eSuperTypes="#//Bidirectional"/>
 </ecore:EPackage>

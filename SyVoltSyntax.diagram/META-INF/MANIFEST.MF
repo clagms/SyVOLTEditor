@@ -8,6 +8,7 @@ Bundle-Activator: syvolt.diagram.part.SyvoltDiagramEditorPlugin
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Export-Package: syvolt.diagram.edit.parts,
+ syvolt.diagram.parsers,
  syvolt.diagram.part,
  syvolt.diagram.providers
 Require-Bundle: org.eclipse.core.runtime,
@@ -42,3 +43,4 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.gef;visibility:=reexport
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Import-Package: syvolt.parser

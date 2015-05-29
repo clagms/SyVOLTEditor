@@ -11,6 +11,7 @@
     </genClasses>
     <genClasses ecoreClass="SyVolt.ecore#//GlobalSpecification">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SyVolt.ecore#//GlobalSpecification/value"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SyVolt.ecore#//GlobalSpecification/abstractValue"/>
     </genClasses>
     <genClasses image="false" ecoreClass="SyVolt.ecore#//MatchClass">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SyVolt.ecore#//MatchClass/attribute"/>
@@ -61,6 +62,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SyVolt.ecore#//AtomicContract/apply"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SyVolt.ecore#//AtomicContract/backwards"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SyVolt.ecore#//AtomicContract/attributeRelations"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SyVolt.ecore#//AtomicContract/evaluatesBefore"/>
     </genClasses>
     <genClasses ecoreClass="SyVolt.ecore#//Trace"/>
     <genClasses image="false" ecoreClass="SyVolt.ecore#//Term"/>
@@ -98,5 +100,16 @@
     </genClasses>
     <genClasses ecoreClass="SyVolt.ecore#//MatchSameElements"/>
     <genClasses ecoreClass="SyVolt.ecore#//ApplySameElements"/>
+    <genClasses image="false" ecoreClass="SyVolt.ecore#//Expression"/>
+    <genClasses ecoreClass="SyVolt.ecore#//ContractReference">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SyVolt.ecore#//ContractReference/contract"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="SyVolt.ecore#//Bidirectional">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SyVolt.ecore#//Bidirectional/left"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SyVolt.ecore#//Bidirectional/right"/>
+    </genClasses>
+    <genClasses ecoreClass="SyVolt.ecore#//And"/>
+    <genClasses ecoreClass="SyVolt.ecore#//Or"/>
+    <genClasses ecoreClass="SyVolt.ecore#//Implies"/>
   </genPackages>
 </genmodel:GenModel>
