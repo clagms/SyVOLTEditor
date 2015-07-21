@@ -27,8 +27,6 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SyVolt.ecore#//MatchAssociation/source"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SyVolt.ecore#//MatchAssociation/target"/>
     </genClasses>
-    <genClasses ecoreClass="SyVolt.ecore#//PositiveIndirectAssociation"/>
-    <genClasses ecoreClass="SyVolt.ecore#//NegativeIndirectAssociation"/>
     <genClasses ecoreClass="SyVolt.ecore#//PositiveMatchAssociation"/>
     <genClasses ecoreClass="SyVolt.ecore#//ApplyClass">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SyVolt.ecore#//ApplyClass/attribute"/>
@@ -74,9 +72,6 @@
     <genClasses ecoreClass="SyVolt.ecore#//AttributeRef">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SyVolt.ecore#//AttributeRef/attributeRef"/>
     </genClasses>
-    <genClasses ecoreClass="SyVolt.ecore#//ClassRef">
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SyVolt.ecore#//ClassRef/classRef"/>
-    </genClasses>
     <genClasses ecoreClass="SyVolt.ecore#//Concat">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SyVolt.ecore#//Concat/leftTerm"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference SyVolt.ecore#//Concat/rightTerm"/>
@@ -85,9 +80,6 @@
     <genClasses image="false" ecoreClass="SyVolt.ecore#//Attribute">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SyVolt.ecore#//Attribute/attributeName"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SyVolt.ecore#//Attribute/id"/>
-    </genClasses>
-    <genClasses ecoreClass="SyVolt.ecore#//isNull">
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute SyVolt.ecore#//isNull/value"/>
     </genClasses>
     <genClasses image="false" ecoreClass="SyVolt.ecore#//MatchAttributeValue"/>
     <genClasses image="false" ecoreClass="SyVolt.ecore#//AbstractTemporalRelation">
@@ -98,8 +90,6 @@
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SyVolt.ecore#//AbstractAttributeRelation/sourceAttribute"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SyVolt.ecore#//AbstractAttributeRelation/targetAttribute"/>
     </genClasses>
-    <genClasses ecoreClass="SyVolt.ecore#//MatchSameElements"/>
-    <genClasses ecoreClass="SyVolt.ecore#//ApplySameElements"/>
     <genClasses image="false" ecoreClass="SyVolt.ecore#//Expression"/>
     <genClasses ecoreClass="SyVolt.ecore#//ContractReference">
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference SyVolt.ecore#//ContractReference/contract"/>

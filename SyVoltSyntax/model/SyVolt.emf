@@ -8,32 +8,30 @@ class TransformationModel {
   val GlobalSpecification specification;
 }
 
-@gmf.node(label="value", tool.description="Create a specification.")
+@gmf.node(label="value", tool.name="Specification", label.text="Specification")
 class GlobalSpecification {
   attr String value;
   
   val Expression abstractValue;
 }
 
-@gmf.node(label="className",foo="bar")
+@gmf.node(label="className",color="236,240,241")
 abstract class MatchClass extends AbstractClass {
   @gmf.compartment(foo="bar")
   val MatchAttribute[*] attribute;
 }
 
-@gmf.node(border.color="204,255,153")
 abstract class PositiveMatchClass extends MatchClass {
 }
 
-@gmf.node(tool.description="Match any class.")
+@gmf.node(tool.name="Pre-Element", label.text="Pre-Element")
 class AnyMatchClass extends PositiveMatchClass {
 }
 
-@gmf.node(tool.description="Match at most one class.")
 class ExistsMatchClass extends PositiveMatchClass {
 }
 
-@gmf.node(foo="bar", tool.description="Match pattern. Place inside Rule.", label.placement="none")
+@gmf.node(color="52,152,219",label.placement="none")
 class PreCondition {
 
   @gmf.compartment(foo="bar")
@@ -41,32 +39,23 @@ class PreCondition {
   val MatchAssociation[*] association;
 }
 
-@gmf.link(source="source", target="target", target.decoration="arrow", width="2")
 abstract class MatchAssociation extends Association {
   ref MatchClass[1] source;
   ref MatchClass[1] target;
 }
 
-@gmf.link(label="", style="dash", color="204,255,153", width="2", tool.description="Existing association across several containments.")
-class PositiveIndirectAssociation extends MatchAssociation {
-}
-
-@gmf.link(style="dash", color="255,61,100", width="2", tool.description="Existing association across several containments.")
-class NegativeIndirectAssociation extends MatchAssociation {
-}
-
-@gmf.link(tool.description="Existing direct association.")
+@gmf.link(source="source", target="target", target.decoration="arrow", tool.name="Pre-Association", label.text="Pre-Association")
 class PositiveMatchAssociation extends MatchAssociation {
 }
 
-@gmf.node(label="className", foo="bar", tool.description="Generates a class in the apply pattern.")
+@gmf.node(label="className", color="236,240,241", tool.name="Post-Element", label.text="Post-Element")
 class ApplyClass extends AbstractClass {
 
   @gmf.compartment(foo="bar")
   val ApplyAttribute[*] attribute;
 }
 
-@gmf.node(color="255,255,163", tool.description="Apply pattern. Place inside Rule.", label.placement="none")
+@gmf.node(color="231,76,60", label.placement="none")
 class PostCondition {
 
   @gmf.compartment(foo="bar")
@@ -74,7 +63,7 @@ class PostCondition {
   val ApplyAssociation[*] association;
 }
 
-@gmf.link(label="associationName", source="source", target="target", target.decoration="arrow", tool.description="Create direct association in the apply pattern.")
+@gmf.link(label="associationName", source="source", target="target", target.decoration="arrow", width="2", tool.name="Post-Association", label.text="Post-Association")
 class ApplyAssociation extends Association {
   ref ApplyClass[1] source;
   ref ApplyClass[1] target;
@@ -93,21 +82,21 @@ abstract class Association {
   attr String associationName;
 }
 
-@gmf.node(label="attributeName", tool.description="Match an attribute.")
+@gmf.node(label="attributeName", tool.name="Pre-Attribute", label.text="Pre-Attribute")
 class MatchAttribute extends Attribute {
 
   @gmf.compartment(foo="bar")
   val MatchAttributeValue attributeValue;
 }
 
-@gmf.node(label="attributeName", tool.description="Create attribute in the apply pattern.")
+@gmf.node(label="attributeName", tool.name="Post-Attribute", label.text="Post-Attribute")
 class ApplyAttribute extends Attribute {
 
   @gmf.compartment(foo="bar")
   val Term attributeValue;
 }
 
-@gmf.node(label="name", tool.description="Create Property.")
+@gmf.node(label="name", tool.name="Contract", label.text="Contract")
 class AtomicContract {
   attr String name;
 
@@ -122,7 +111,7 @@ class AtomicContract {
   ref AtomicContract evaluatesBefore;
 }
 
-@gmf.link(foo="bar", tool.description="Create a generator-generated restriction.")
+@gmf.link(tool.name="Same Element", label.text="Same Element")
 class Trace extends AbstractTemporalRelation {
 }
 
@@ -133,7 +122,7 @@ abstract class Term {
 abstract class Operator extends Term {
 }
 
-@gmf.node(label="value", label.icon="false", tool.description="Create a literal.")
+@gmf.node(label="value" , tool.name="Text", label.text="Text")
 class Atom extends Term, MatchAttributeValue {
   attr String value;
 }
@@ -141,21 +130,15 @@ class Atom extends Term, MatchAttributeValue {
 abstract class Ref extends Term {
 }
 
-@gmf.node(tool.description="Copy attribute value.", label.placement="none")
+@gmf.node(label.placement="none", tool.name="Same Value")
 class AttributeRef extends Ref {
 
   @gmf.link(target.decoration="arrow", width="2", tool.description="Specify source attribute.")
   ref Attribute[1] attributeRef;
 }
 
-@gmf.node(foo="bar", label.placement="none")
-class ClassRef extends Ref {
 
-  @gmf.link(target.decoration="arrow", width="2")
-  ref AbstractClass[1] classRef;
-}
-
-@gmf.node(tool.description="Concatenate expressions.", label.placement="none")
+@gmf.node(label.placement="none", tool.name="Concatenation")
 class Concat extends Operator {
 
   @gmf.compartment(foo="bar")
@@ -165,7 +148,7 @@ class Concat extends Operator {
   val Term[1] rightTerm;
 }
 
-@gmf.node(tool.description="Match any literal.", label.placement="none")
+@gmf.node(label.placement="none", tool.name="Wildcard", label.text="Wildcard")
 class Wildcard extends Term {
 }
 
@@ -173,11 +156,6 @@ class Wildcard extends Term {
 abstract class Attribute {
   attr String attributeName;
   id attr String ~id;
-}
-
-@gmf.node(label="value", label.icon="false")
-class isNull extends MatchAttributeValue {
-  attr boolean value = true;
 }
 
 abstract class MatchAttributeValue {
@@ -194,15 +172,6 @@ abstract class AbstractAttributeRelation {
   ref Attribute sourceAttribute;
   ref Attribute targetAttribute;
 }
-
-@gmf.link(color="153,255,153", source="source", target="target", target.decoration="none", width="2", label.text="equal")
-class MatchSameElements extends MatchAssociation {
-}
-
-@gmf.link(color="153,255,153", source="source", target="target", target.decoration="none", width="2", label.text="equal")
-class ApplySameElements extends ApplyAssociation {
-}
-
 
 abstract class Expression {
 }

@@ -12,8 +12,8 @@
         collapsible="true">
       <tools
           xsi:type="gmftool:CreationTool"
-          title="AnyMatchClass"
-          description="Match any class.">
+          title="Concatenation"
+          description="Create new Concatenation">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -21,62 +21,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="ApplyAttribute"
-          description="Create attribute in the apply pattern.">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="ApplyClass"
-          description="Generates a class in the apply pattern.">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="Atom"
-          description="Create a literal.">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="AtomicContract"
-          description="Create Property.">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="AttributeRef"
-          description="Copy attribute value.">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="ClassRef"
-          description="Create new ClassRef">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="Concat"
-          description="Concatenate expressions.">
+          title="Contract"
+          description="Create new Contract">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -85,7 +31,7 @@
       <tools
           xsi:type="gmftool:CreationTool"
           title="ExistsMatchClass"
-          description="Match at most one class.">
+          description="Create new ExistsMatchClass">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -93,8 +39,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="GlobalSpecification"
-          description="Create a specification.">
+          title="Post-Attribute"
+          description="Create new Post-Attribute">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -102,8 +48,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="MatchAttribute"
-          description="Match an attribute.">
+          title="Post-Element"
+          description="Create new Post-Element">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -112,7 +58,25 @@
       <tools
           xsi:type="gmftool:CreationTool"
           title="PostCondition"
-          description="Apply pattern. Place inside Rule.">
+          description="Create new PostCondition">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Pre-Attribute"
+          description="Create new Pre-Attribute">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Pre-Element"
+          description="Create new Pre-Element">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -121,7 +85,34 @@
       <tools
           xsi:type="gmftool:CreationTool"
           title="PreCondition"
-          description="Match pattern. Place inside Rule.">
+          description="Create new PreCondition">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Same Value"
+          description="Create new Same Value">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Specification"
+          description="Create new Specification">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Text"
+          description="Create new Text">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -130,16 +121,7 @@
       <tools
           xsi:type="gmftool:CreationTool"
           title="Wildcard"
-          description="Match any literal.">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="isNull"
-          description="Create new isNull">
+          description="Create new Wildcard">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -152,24 +134,6 @@
         collapsible="true">
       <tools
           xsi:type="gmftool:CreationTool"
-          title="ApplyAssociation"
-          description="Create direct association in the apply pattern.">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="ApplySameElements"
-          description="Create direct association in the apply pattern.">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
           title="AttributeRef"
           description="Specify source attribute.">
         <smallIcon
@@ -179,8 +143,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="ClassRef"
-          description="Create new ClassRef">
+          title="Post-Association"
+          description="Create new Post-Association">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -188,8 +152,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="MatchSameElements"
-          description="Create new MatchSameElements">
+          title="Pre-Association"
+          description="Create new Pre-Association">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon
@@ -197,35 +161,8 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="NegativeIndirectAssociation"
-          description="Existing association across several containments.">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="PositiveIndirectAssociation"
-          description="Existing association across several containments.">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="PositiveMatchAssociation"
-          description="Existing direct association.">
-        <smallIcon
-            xsi:type="gmftool:DefaultImage"/>
-        <largeIcon
-            xsi:type="gmftool:DefaultImage"/>
-      </tools>
-      <tools
-          xsi:type="gmftool:CreationTool"
-          title="Trace"
-          description="Create a generator-generated restriction.">
+          title="Same Element"
+          description="Create new Same Element">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon

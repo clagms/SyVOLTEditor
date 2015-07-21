@@ -41,13 +41,6 @@
         queryText="true"/>
   </childNodeTraces>
   <childNodeTraces
-      visualID="3006"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'isNull') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'MatchAttribute') and _containmentMF_.name = 'attributeValue')">
-    <nodeLabelTraces
-        visualID="5002"
-        queryText="true"/>
-  </childNodeTraces>
-  <childNodeTraces
       visualID="3011"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'ApplyAttribute') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'ApplyClass') and _containmentMF_.name = 'attribute')">
     <nodeLabelTraces
@@ -67,9 +60,6 @@
   <childNodeTraces
       visualID="3014"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'AttributeRef') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'ApplyAttribute') and _containmentMF_.name = 'attributeValue')"/>
-  <childNodeTraces
-      visualID="3015"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'ClassRef') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'ApplyAttribute') and _containmentMF_.name = 'attributeValue')"/>
   <childNodeTraces
       visualID="3016"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Concat') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'ApplyAttribute') and _containmentMF_.name = 'attributeValue')">
@@ -91,9 +81,6 @@
       visualID="3020"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'AttributeRef') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Concat') and _containmentMF_.name = 'leftTerm')"/>
   <childNodeTraces
-      visualID="3021"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'ClassRef') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Concat') and _containmentMF_.name = 'leftTerm')"/>
-  <childNodeTraces
       visualID="3022"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Concat') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Concat') and _containmentMF_.name = 'leftTerm')">
     <compartmentTraces
@@ -113,9 +100,6 @@
   <childNodeTraces
       visualID="3024"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'AttributeRef') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Concat') and _containmentMF_.name = 'rightTerm')"/>
-  <childNodeTraces
-      visualID="3025"
-      queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'ClassRef') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Concat') and _containmentMF_.name = 'rightTerm')"/>
   <childNodeTraces
       visualID="3026"
       queryText="(let _eClass_:ecore::EClass = modelFacet.metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Concat') and (let _containmentMF_:ecore::EStructuralFeature = modelFacet.containmentMetaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _containmentMF_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Concat') and _containmentMF_.name = 'rightTerm')">
@@ -180,16 +164,6 @@
         queryText="true"/>
   </childNodeTraces>
   <linkTraces
-      visualID="4001"
-      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'PositiveIndirectAssociation')"/>
-  <linkTraces
-      visualID="4002"
-      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'NegativeIndirectAssociation')">
-    <linkLabelTraces
-        visualID="6001"
-        queryText="true"/>
-  </linkTraces>
-  <linkTraces
       visualID="4003"
       queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'PositiveMatchAssociation')">
     <linkLabelTraces
@@ -208,27 +182,6 @@
       queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'AttributeRef') and _feature_.name = 'attributeRef')">
     <linkLabelTraces
         visualID="6006"
-        queryText="true"/>
-  </linkTraces>
-  <linkTraces
-      visualID="4010"
-      queryText="modelFacet.oclIsKindOf(gmfgen::FeatureLinkModelFacet) and (let _feature_:ecore::EStructuralFeature = modelFacet.oclAsType(gmfgen::FeatureLinkModelFacet).metaFeature.ecoreFeature in (let _eClass_:ecore::EClass = _feature_.eContainingClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'ClassRef') and _feature_.name = 'classRef')">
-    <linkLabelTraces
-        visualID="6007"
-        queryText="true"/>
-  </linkTraces>
-  <linkTraces
-      visualID="4011"
-      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'MatchSameElements')">
-    <linkLabelTraces
-        visualID="6008"
-        queryText="true"/>
-  </linkTraces>
-  <linkTraces
-      visualID="4012"
-      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'ApplySameElements')">
-    <linkLabelTraces
-        visualID="6009"
         queryText="true"/>
   </linkTraces>
   <linkTraces

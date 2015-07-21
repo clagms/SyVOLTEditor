@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="GenerateEditor" default="main" basedir=".">
+
+	<!-- Generate GMF Editor -->
+	<target name="main">
+
+		<!-- Remove previously generated files. -->
+
+		<delete quiet="true" includeEmptyDirs="true">
+			<fileset dir="../SyVoltSyntax.diagram/src" />
+		</delete>
+
+		<delete quiet="true" includeEmptyDirs="true">
+			<fileset dir="../SyVoltSyntax.tests/src" />
+		</delete>
+
+		<delete quiet="true" includeEmptyDirs="true">
+			<fileset dir="../SyVoltSyntax.editor/src" />
+		</delete>
+
+		<delete quiet="true" includeEmptyDirs="true">
+			<fileset dir="../SyVoltSyntax.edit/src" />
+		</delete>
+
+		<delete quiet="true" includeEmptyDirs="true">
+			<fileset dir="./src" />
+		</delete>
+
+		<delete file="./model/SyVoltSyntax.ecore" />
+		<delete file="./model/SyVoltSyntax.ecorediag" />
+		<delete file="./model/SyVoltSyntax.genmodel" />
+		<delete file="./model/SyVoltSyntax.gmfgen" />
+		<delete file="./model/SyVoltSyntax.gmfgraph" />
+		<delete file="./model/SyVoltSyntax.gmfmap" />
+		<delete file="./model/SyVoltSyntax.gmftool" />
+		<delete file="./model/SyVoltSyntax.trace" />
+
+		<eclipse.refreshLocal resource="SyVoltSyntax" depth="infinite" />
+		<eclipse.refreshLocal resource="SyVoltSyntax.diagram" depth="infinite" />
+		<eclipse.refreshLocal resource="SyVoltSyntax.edit" depth="infinite" />
+		<eclipse.refreshLocal resource="SyVoltSyntax.editor" depth="infinite" />
+		<eclipse.refreshLocal resource="SyVoltSyntax.tests" depth="infinite" />
+
+		<epsilon.eugenia src="model/SyVolt.emf" />
+
+		<eclipse.refreshLocal resource="SyVoltSyntax" depth="infinite" />
+		<eclipse.refreshLocal resource="SyVoltSyntax.diagram" depth="infinite" />
+		<eclipse.refreshLocal resource="SyVoltSyntax.edit" depth="infinite" />
+		<eclipse.refreshLocal resource="SyVoltSyntax.editor" depth="infinite" />
+		<eclipse.refreshLocal resource="SyVoltSyntax.tests" depth="infinite" />
+
+
+		<!-- Inject Validation Code On Save 
+		<copy todir="../TrNetVisual.diagram/src/trnetvisual/diagram/part" file="injection/source/TrnetvisualDocumentProvider.java" overwrite="true">
+		</copy>-->
+		
+		<!-- Deploy diagram icon files 
+		<copy todir="../new/dir"  overwrite="true">
+			<fileset dir="src_dir" />
+		</copy>
+		-->
+
+	</target>
+
+
+
+</project>
