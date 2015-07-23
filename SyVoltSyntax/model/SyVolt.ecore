@@ -131,6 +131,7 @@
     <eAnnotations source="gmf.link">
       <details key="label" value="associationName"/>
       <details key="width" value="2"/>
+      <details key="color" value="0,0,0"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="associationName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
@@ -165,6 +166,7 @@
       <details key="label" value="name"/>
       <details key="tool.name" value="Contract"/>
       <details key="label.text" value="Contract"/>
+      <details key="color" value="216,216,216"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="match" lowerBound="1" upperBound="-1"
@@ -260,6 +262,7 @@
       <details key="source" value="sourceClass"/>
       <details key="style" value="dot"/>
       <details key="width" value="2"/>
+      <details key="color" value="0,0,0"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="targetClass" lowerBound="1"
         eType="#//ApplyClass"/>

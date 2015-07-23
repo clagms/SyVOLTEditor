@@ -104,6 +104,7 @@
       </descriptors>
       <descriptors name="AtomicContractFigure">
         <actualFigure xsi:type="gmfgraph:RoundedRectangle" name="AtomicContractFigure">
+          <backgroundColor xsi:type="gmfgraph:RGBColor" red="216" green="216" blue="216"/>
           <border xsi:type="gmfgraph:MarginBorder">
             <insets top="5" left="5" bottom="5" right="5"/>
           </border>
@@ -152,19 +153,25 @@
         </actualFigure>
       </descriptors>
       <descriptors name="PositiveMatchAssociationFigure">
-        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PositiveMatchAssociationFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.0"/>
+        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="PositiveMatchAssociationFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.0">
+          <foregroundColor xsi:type="gmfgraph:RGBColor"/>
+        </actualFigure>
       </descriptors>
       <descriptors name="PositiveMatchAssociationLabelFigure">
         <actualFigure xsi:type="gmfgraph:Label" name="PositiveMatchAssociationLabelLabel" text="Pre-Association"/>
       </descriptors>
       <descriptors name="ApplyAssociationFigure">
-        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ApplyAssociationFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.1"/>
+        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ApplyAssociationFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.1">
+          <foregroundColor xsi:type="gmfgraph:RGBColor"/>
+        </actualFigure>
       </descriptors>
       <descriptors name="ApplyAssociationLabelFigure">
         <actualFigure xsi:type="gmfgraph:Label" name="ApplyAssociationLabelLabel" text="Post-Association"/>
       </descriptors>
       <descriptors name="TraceFigure">
-        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="TraceFigure" lineWidth="2" lineKind="LINE_DOT"/>
+        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="TraceFigure" lineWidth="2" lineKind="LINE_DOT">
+          <foregroundColor xsi:type="gmfgraph:RGBColor"/>
+        </actualFigure>
       </descriptors>
       <descriptors name="AttributeRefAttributeRefFigure">
         <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AttributeRefAttributeRefFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.2"/>

@@ -77,7 +77,7 @@ abstract class AbstractClass {
   id attr String ~id;
 }
 
-@gmf.link(label="associationName", width="2")
+@gmf.link(label="associationName", width="2", color="0,0,0")
 abstract class Association {
   attr String associationName;
 }
@@ -96,7 +96,7 @@ class ApplyAttribute extends Attribute {
   val Term attributeValue;
 }
 
-@gmf.node(label="name", tool.name="Contract", label.text="Contract")
+@gmf.node(label="name", tool.name="Contract", label.text="Contract", color="216,216,216")
 class AtomicContract {
   attr String name;
 
@@ -161,7 +161,7 @@ abstract class Attribute {
 abstract class MatchAttributeValue {
 }
 
-@gmf.link(target="targetClass", source="sourceClass", style="dot", width="2")
+@gmf.link(target="targetClass", source="sourceClass", style="dot", width="2", color="0,0,0")
 abstract class AbstractTemporalRelation {
   ref ApplyClass[1] targetClass;
   ref PositiveMatchClass[1] sourceClass;
