@@ -173,6 +173,22 @@
           <foregroundColor xsi:type="gmfgraph:RGBColor"/>
         </actualFigure>
       </descriptors>
+      <descriptors name="MatchSameElementsFigure">
+        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="MatchSameElementsFigure" lineWidth="2">
+          <foregroundColor xsi:type="gmfgraph:RGBColor" green="255"/>
+        </actualFigure>
+      </descriptors>
+      <descriptors name="MatchSameElementsLabelFigure">
+        <actualFigure xsi:type="gmfgraph:Label" name="MatchSameElementsLabelLabel" text="equal"/>
+      </descriptors>
+      <descriptors name="ApplySameElementsFigure">
+        <actualFigure xsi:type="gmfgraph:PolylineConnection" name="ApplySameElementsFigure" lineWidth="2">
+          <foregroundColor xsi:type="gmfgraph:RGBColor" green="255"/>
+        </actualFigure>
+      </descriptors>
+      <descriptors name="ApplySameElementsLabelFigure">
+        <actualFigure xsi:type="gmfgraph:Label" name="ApplySameElementsLabelLabel" text="equal"/>
+      </descriptors>
       <descriptors name="AttributeRefAttributeRefFigure">
         <actualFigure xsi:type="gmfgraph:PolylineConnection" name="AttributeRefAttributeRefFigure" lineWidth="2" targetDecoration="/0/@figures.0/@figures.2"/>
       </descriptors>
@@ -196,6 +212,8 @@
     <connections name="PositiveMatchAssociation" figure="PositiveMatchAssociationFigure"/>
     <connections name="ApplyAssociation" figure="ApplyAssociationFigure"/>
     <connections name="Trace" figure="TraceFigure"/>
+    <connections name="MatchSameElements" figure="MatchSameElementsFigure"/>
+    <connections name="ApplySameElements" figure="ApplySameElementsFigure"/>
     <connections name="AttributeRefAttributeRef" figure="AttributeRefAttributeRefFigure"/>
     <compartments name="AnyMatchClassAttributeCompartment" figure="AnyMatchClassFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.1/@accessors.1"/>
     <compartments name="ExistsMatchClassAttributeCompartment" figure="ExistsMatchClassFigure" collapsible="true" accessor="/0/@figures.0/@descriptors.2/@accessors.1"/>
@@ -218,6 +236,8 @@
     <labels name="AtomLabel" figure="AtomFigure" accessor="/0/@figures.0/@descriptors.9/@accessors.0"/>
     <labels name="PositiveMatchAssociationLabel" figure="PositiveMatchAssociationLabelFigure" elementIcon="false"/>
     <labels name="ApplyAssociationLabel" figure="ApplyAssociationLabelFigure" elementIcon="false"/>
+    <labels name="MatchSameElementsLabel" figure="MatchSameElementsLabelFigure" elementIcon="false"/>
+    <labels name="ApplySameElementsLabel" figure="ApplySameElementsLabelFigure" elementIcon="false"/>
     <labels name="AttributeRefAttributeRefExternalLabel" figure="AttributeRefAttributeRefExternalLabelFigure" elementIcon="false"/>
   </gmfgraph:Canvas>
   <gmfgraph:Label name="PreConditionLabelFigure" text="PreCondition">

@@ -161,8 +161,26 @@
       </tools>
       <tools
           xsi:type="gmftool:CreationTool"
-          title="Same Element"
-          description="Create new Same Element">
+          title="Same Post-Elements"
+          description="Create new Same Post-Elements">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Same Pre-Elements"
+          description="Create new Same Pre-Elements">
+        <smallIcon
+            xsi:type="gmftool:DefaultImage"/>
+        <largeIcon
+            xsi:type="gmftool:DefaultImage"/>
+      </tools>
+      <tools
+          xsi:type="gmftool:CreationTool"
+          title="Trace Link"
+          description="Create new Trace Link">
         <smallIcon
             xsi:type="gmftool:DefaultImage"/>
         <largeIcon

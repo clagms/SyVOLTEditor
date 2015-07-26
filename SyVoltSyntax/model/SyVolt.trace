@@ -187,4 +187,18 @@
   <linkTraces
       visualID="4013"
       queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'Trace')"/>
+  <linkTraces
+      visualID="4014"
+      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'MatchSameElements')">
+    <linkLabelTraces
+        visualID="6007"
+        queryText="true"/>
+  </linkTraces>
+  <linkTraces
+      visualID="4015"
+      queryText="modelFacet.oclIsKindOf(gmfgen::TypeLinkModelFacet) and (let _eClass_:ecore::EClass = modelFacet.oclAsType(gmfgen::TypeLinkModelFacet).metaClass.ecoreClass in _eClass_.ePackage.nsURI = 'http://syvolt/2.0' and _eClass_.name = 'ApplySameElements')">
+    <linkLabelTraces
+        visualID="6008"
+        queryText="true"/>
+  </linkTraces>
 </trace:TraceModel>

@@ -350,6 +350,52 @@
         </modelFacet>
       </labels>
     </links>
+    <links visualID="4014" editPartClassName="MatchSameElementsEditPart" itemSemanticEditPolicyClassName="MatchSameElementsItemSemanticEditPolicy" createCommandClassName="MatchSameElementsCreateCommand" reorientCommandClassName="MatchSameElementsReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="MatchSameElementsEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="MatchSameElementsFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class MatchSameElementsFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public MatchSameElementsFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#x9;this.setForegroundColor(THIS_FORE&#xA;);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_FORE = new org.eclipse.swt.graphics.Color(null, 0, 255, 0);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedForeground="true"/>
+      </viewmap>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="SyVolt.genmodel#//syvolt/MatchSameElements"/>
+        <containmentMetaFeature href="SyVolt.genmodel#//syvolt/PreCondition/association"/>
+        <childMetaFeature href="SyVolt.genmodel#//syvolt/PreCondition/association"/>
+        <sourceMetaFeature href="SyVolt.genmodel#//syvolt/MatchAssociation/source"/>
+        <targetMetaFeature href="SyVolt.genmodel#//syvolt/MatchAssociation/target"/>
+      </modelFacet>
+      <labels visualID="6007" editPartClassName="MatchSameElementsAssociationNameEditPart" itemSemanticEditPolicyClassName="MatchSameElementsAssociationNameItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="MatchSameElementsLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class MatchSameElementsLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public MatchSameElementsLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;equal&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="40"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="SyVolt.genmodel#//syvolt/Association/associationName"/>
+        </modelFacet>
+      </labels>
+    </links>
+    <links visualID="4015" editPartClassName="ApplySameElementsEditPart" itemSemanticEditPolicyClassName="ApplySameElementsItemSemanticEditPolicy" createCommandClassName="ApplySameElementsCreateCommand" reorientCommandClassName="ApplySameElementsReorientCommand">
+      <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
+      <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ApplySameElementsEditHelper"/>
+      <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ApplySameElementsFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ApplySameElementsFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ApplySameElementsFigure() {&#xA;&#x9;&#x9;this.setLineWidth(2);&#xA;&#x9;this.setForegroundColor(THIS_FORE&#xA;);&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_FORE = new org.eclipse.swt.graphics.Color(null, 0, 255, 0);&#xA;&#xA;">
+        <attributes xsi:type="gmfgen:StyleAttributes" fixedForeground="true"/>
+      </viewmap>
+      <modelFacet xsi:type="gmfgen:TypeLinkModelFacet">
+        <metaClass href="SyVolt.genmodel#//syvolt/ApplySameElements"/>
+        <containmentMetaFeature href="SyVolt.genmodel#//syvolt/PostCondition/association"/>
+        <childMetaFeature href="SyVolt.genmodel#//syvolt/PostCondition/association"/>
+        <sourceMetaFeature href="SyVolt.genmodel#//syvolt/ApplyAssociation/source"/>
+        <targetMetaFeature href="SyVolt.genmodel#//syvolt/ApplyAssociation/target"/>
+      </modelFacet>
+      <labels visualID="6008" editPartClassName="ApplySameElementsAssociationNameEditPart" itemSemanticEditPolicyClassName="ApplySameElementsAssociationNameItemSemanticEditPolicy">
+        <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+        <viewmap xsi:type="gmfgen:InnerClassViewmap" className="ApplySameElementsLabelFigure" classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ApplySameElementsLabelFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ApplySameElementsLabelFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;this.setText(&quot;equal&quot;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;">
+          <attributes xsi:type="gmfgen:LabelOffsetAttributes" y="40"/>
+        </viewmap>
+        <modelFacet xsi:type="gmfgen:FeatureLabelModelFacet" parser="//@labelParsers/@implementations.0">
+          <metaFeatures href="SyVolt.genmodel#//syvolt/Association/associationName"/>
+        </modelFacet>
+      </labels>
+    </links>
     <links visualID="4005" editPartClassName="ApplyAssociationEditPart" itemSemanticEditPolicyClassName="ApplyAssociationItemSemanticEditPolicy" createCommandClassName="ApplyAssociationCreateCommand" reorientCommandClassName="ApplyAssociationReorientCommand">
       <diagramRunTimeClass href="platform:/plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Edge"/>
       <elementType xsi:type="gmfgen:MetamodelType" editHelperClassName="ApplyAssociationEditHelper"/>
@@ -479,10 +525,12 @@
         <entries xsi:type="gmfgen:ToolEntry" title="Wildcard" description="Create new Wildcard" genNodes="//@diagram/@childNodes.17 //@diagram/@childNodes.18 //@diagram/@childNodes.19"/>
       </groups>
       <groups title="Connections" collapse="true">
-        <entries xsi:type="gmfgen:ToolEntry" title="AttributeRef" description="Specify source attribute." genLinks="//@diagram/@links.3"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="Post-Association" description="Create new Post-Association" genLinks="//@diagram/@links.1"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="AttributeRef" description="Specify source attribute." genLinks="//@diagram/@links.5"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Post-Association" description="Create new Post-Association" genLinks="//@diagram/@links.3"/>
         <entries xsi:type="gmfgen:ToolEntry" title="Pre-Association" description="Create new Pre-Association" genLinks="//@diagram/@links.0"/>
-        <entries xsi:type="gmfgen:ToolEntry" title="Same Element" description="Create new Same Element" genLinks="//@diagram/@links.2"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Same Post-Elements" description="Create new Same Post-Elements" genLinks="//@diagram/@links.2"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Same Pre-Elements" description="Create new Same Pre-Elements" genLinks="//@diagram/@links.1"/>
+        <entries xsi:type="gmfgen:ToolEntry" title="Trace Link" description="Create new Trace Link" genLinks="//@diagram/@links.4"/>
       </groups>
     </palette>
     <preferencePages xsi:type="gmfgen:GenStandardPreferencePage" iD="SyVoltSyntax.diagram.general" name="Syvolt Diagram">
@@ -549,28 +597,42 @@
     <childReferences parent="//@diagram/@links.0" child="//@diagram/@childNodes.4" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
     <childReferences parent="//@diagram/@childNodes.4" child="//@diagram/@links.0" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
     <childReferences parent="//@diagram" child="//@diagram/@links.1" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@links.1" child="//@diagram/@childNodes.6" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@childNodes.6" child="//@diagram/@links.1" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@links.1" child="//@diagram/@childNodes.6" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@childNodes.6" child="//@diagram/@links.1" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.1" child="//@diagram/@childNodes.1" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.1" child="//@diagram/@links.1" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.1" child="//@diagram/@childNodes.4" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.4" child="//@diagram/@links.1" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.1" child="//@diagram/@childNodes.1" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.1" child="//@diagram/@links.1" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.1" child="//@diagram/@childNodes.4" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.4" child="//@diagram/@links.1" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
     <childReferences parent="//@diagram" child="//@diagram/@links.2" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
     <childReferences parent="//@diagram/@links.2" child="//@diagram/@childNodes.6" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
     <childReferences parent="//@diagram/@childNodes.6" child="//@diagram/@links.2" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@links.2" child="//@diagram/@childNodes.1" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@childNodes.1" child="//@diagram/@links.2" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@links.2" child="//@diagram/@childNodes.4" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@childNodes.4" child="//@diagram/@links.2" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.2" child="//@diagram/@childNodes.6" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.6" child="//@diagram/@links.2" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
     <childReferences parent="//@diagram" child="//@diagram/@links.3" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@links.3" child="//@diagram/@childNodes.2" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@childNodes.2" child="//@diagram/@links.3" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@links.3" child="//@diagram/@childNodes.7" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@childNodes.7" child="//@diagram/@links.3" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@links.3" child="//@diagram/@childNodes.9" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@childNodes.9" child="//@diagram/@links.3" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@links.3" child="//@diagram/@childNodes.12" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@childNodes.12" child="//@diagram/@links.3" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@links.3" child="//@diagram/@childNodes.15" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
-    <childReferences parent="//@diagram/@childNodes.15" child="//@diagram/@links.3" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.3" child="//@diagram/@childNodes.6" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.6" child="//@diagram/@links.3" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.3" child="//@diagram/@childNodes.6" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.6" child="//@diagram/@links.3" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.4" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.4" child="//@diagram/@childNodes.6" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.6" child="//@diagram/@links.4" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.4" child="//@diagram/@childNodes.1" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.1" child="//@diagram/@links.4" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.4" child="//@diagram/@childNodes.4" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.4" child="//@diagram/@links.4" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram" child="//@diagram/@links.5" groupName="links" groupIcon="icons/linksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.5" child="//@diagram/@childNodes.2" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.2" child="//@diagram/@links.5" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.5" child="//@diagram/@childNodes.7" referenceType="out_target" groupName="target" groupIcon="icons/linkTargetNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.7" child="//@diagram/@links.5" referenceType="in_source" groupName="incoming links" groupIcon="icons/incomingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.5" child="//@diagram/@childNodes.9" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.9" child="//@diagram/@links.5" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.5" child="//@diagram/@childNodes.12" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.12" child="//@diagram/@links.5" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@links.5" child="//@diagram/@childNodes.15" referenceType="in_source" groupName="source" groupIcon="icons/linkSourceNavigatorGroup.gif"/>
+    <childReferences parent="//@diagram/@childNodes.15" child="//@diagram/@links.5" referenceType="out_target" groupName="outgoing links" groupIcon="icons/outgoingLinksNavigatorGroup.gif"/>
   </navigator>
   <diagramUpdater/>
   <propertySheet>
@@ -586,8 +648,8 @@
   </propertySheet>
   <domainGenModel href="SyVolt.genmodel#/"/>
   <labelParsers extensibleViaService="true">
-    <implementations xsi:type="gmfgen:PredefinedParser" uses="//@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.8/@labels.0/@modelFacet //@diagram/@childNodes.11/@labels.0/@modelFacet //@diagram/@childNodes.14/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.0/@modelFacet //@diagram/@childNodes.6/@labels.0/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@links.0/@labels.0/@modelFacet //@diagram/@links.1/@labels.0/@modelFacet"/>
-    <implementations xsi:type="gmfgen:ExternalParser" uses="//@diagram/@links.3/@labels.0/@modelFacet"/>
+    <implementations xsi:type="gmfgen:PredefinedParser" uses="//@diagram/@childNodes.3/@labels.0/@modelFacet //@diagram/@childNodes.2/@labels.0/@modelFacet //@diagram/@childNodes.1/@labels.0/@modelFacet //@diagram/@childNodes.4/@labels.0/@modelFacet //@diagram/@childNodes.8/@labels.0/@modelFacet //@diagram/@childNodes.11/@labels.0/@modelFacet //@diagram/@childNodes.14/@labels.0/@modelFacet //@diagram/@childNodes.7/@labels.0/@modelFacet //@diagram/@childNodes.6/@labels.0/@modelFacet //@diagram/@topLevelNodes.0/@labels.0/@modelFacet //@diagram/@topLevelNodes.1/@labels.0/@modelFacet //@diagram/@links.0/@labels.0/@modelFacet //@diagram/@links.1/@labels.0/@modelFacet //@diagram/@links.2/@labels.0/@modelFacet //@diagram/@links.3/@labels.0/@modelFacet"/>
+    <implementations xsi:type="gmfgen:ExternalParser" uses="//@diagram/@links.5/@labels.0/@modelFacet"/>
   </labelParsers>
   <contextMenus context="//@diagram">
     <items xsi:type="gmfgen:LoadResourceAction"/>

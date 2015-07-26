@@ -392,6 +392,54 @@
   </links>
   <links>
     <domainMetaElement
+        href="SyVolt.ecore#//MatchSameElements"/>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="SyVolt.gmfgraph#MatchSameElementsLabel"/>
+      <features
+          href="SyVolt.ecore#//Association/associationName"/>
+    </labelMappings>
+    <containmentFeature
+        href="SyVolt.ecore#//PreCondition/association"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="SyVolt.gmftool#//@palette/@tools.1/@tools.4"/>
+    <diagramLink
+        href="SyVolt.gmfgraph#MatchSameElements"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="SyVolt.ecore#//MatchAssociation/source"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="SyVolt.ecore#//MatchAssociation/target"/>
+  </links>
+  <links>
+    <domainMetaElement
+        href="SyVolt.ecore#//ApplySameElements"/>
+    <labelMappings
+        xsi:type="gmfmap:FeatureLabelMapping">
+      <diagramLabel
+          href="SyVolt.gmfgraph#ApplySameElementsLabel"/>
+      <features
+          href="SyVolt.ecore#//Association/associationName"/>
+    </labelMappings>
+    <containmentFeature
+        href="SyVolt.ecore#//PostCondition/association"/>
+    <tool
+        xsi:type="gmftool:CreationTool"
+        href="SyVolt.gmftool#//@palette/@tools.1/@tools.3"/>
+    <diagramLink
+        href="SyVolt.gmfgraph#ApplySameElements"/>
+    <sourceMetaFeature
+        xsi:type="ecore:EReference"
+        href="SyVolt.ecore#//ApplyAssociation/source"/>
+    <linkMetaFeature
+        xsi:type="ecore:EReference"
+        href="SyVolt.ecore#//ApplyAssociation/target"/>
+  </links>
+  <links>
+    <domainMetaElement
         href="SyVolt.ecore#//ApplyAssociation"/>
     <labelMappings
         xsi:type="gmfmap:FeatureLabelMapping">
@@ -421,7 +469,7 @@
         href="SyVolt.ecore#//AtomicContract/backwards"/>
     <tool
         xsi:type="gmftool:CreationTool"
-        href="SyVolt.gmftool#//@palette/@tools.1/@tools.3"/>
+        href="SyVolt.gmftool#//@palette/@tools.1/@tools.5"/>
     <diagramLink
         href="SyVolt.gmfgraph#Trace"/>
     <sourceMetaFeature

@@ -111,7 +111,7 @@ class AtomicContract {
   ref AtomicContract evaluatesBefore;
 }
 
-@gmf.link(tool.name="Same Element", label.text="Same Element")
+@gmf.link(tool.name="Trace Link", label.text="Trace Link")
 class Trace extends AbstractTemporalRelation {
 }
 
@@ -171,6 +171,14 @@ abstract class AbstractTemporalRelation {
 abstract class AbstractAttributeRelation {
   ref Attribute sourceAttribute;
   ref Attribute targetAttribute;
+}
+
+@gmf.link(color="0,255,0", source="source", target="target", target.decoration="none", width="2", label.text="equal", tool.name="Same Pre-Elements")
+class MatchSameElements extends MatchAssociation {
+}
+
+@gmf.link(color="0,255,0", source="source", target="target", target.decoration="none", width="2", label.text="equal", tool.name="Same Post-Elements")
+class ApplySameElements extends ApplyAssociation {
 }
 
 abstract class Expression {

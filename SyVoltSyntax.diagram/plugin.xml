@@ -259,7 +259,7 @@
          <context viewClass="org.eclipse.gmf.runtime.notation.Node" containerViews="referencing-diagrams"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Syvolt"/>
          <context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2004,2002,3037,3031,3004,3005,3032,3038,3034,3011,3013,3014,3016,3019,3020,3022,3023,3024,3026,3027,3028,3029"/>
-         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4003,4005,4013,4009"/>
+         <context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4003,4014,4015,4005,4013,4009"/>
       </viewProvider>
    </extension>
 
@@ -274,7 +274,7 @@
             <method name="getType()" value="2004,2002,3037,3031,3004,3005,3032,3038,3034,3011,3013,3014,3016,3019,3020,3022,3023,3024,3026,3027,3028,3029"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Edge" id="generated-links">
-            <method name="getType()" value="4003,4005,4013,4009"/>
+            <method name="getType()" value="4003,4014,4015,4005,4013,4009"/>
          </object>
          <object class="org.eclipse.gmf.runtime.notation.Node" id="generated-labels">
             <method name="getType()" value="5019,5017,5014,5003,5001,5015,5016,5010,5007,5008,5009"/>
@@ -668,6 +668,26 @@
       </metamodel>
       <metamodel nsURI="http://syvolt/2.0">
          <metamodelType
+               id="SyVoltSyntax.diagram.MatchSameElements_4014"
+               name="%metatype.name.MatchSameElements_4014"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="MatchSameElements"
+               edithelper="syvolt.diagram.edit.helpers.MatchSameElementsEditHelper">
+            <param name="semanticHint" value="4014"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://syvolt/2.0">
+         <metamodelType
+               id="SyVoltSyntax.diagram.ApplySameElements_4015"
+               name="%metatype.name.ApplySameElements_4015"
+               kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
+               eclass="ApplySameElements"
+               edithelper="syvolt.diagram.edit.helpers.ApplySameElementsEditHelper">
+            <param name="semanticHint" value="4015"/>
+         </metamodelType>
+      </metamodel>
+      <metamodel nsURI="http://syvolt/2.0">
+         <metamodelType
                id="SyVoltSyntax.diagram.ApplyAssociation_4005"
                name="%metatype.name.ApplyAssociation_4005"
                kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType"
@@ -731,6 +751,8 @@
          <elementType ref="SyVoltSyntax.diagram.Wildcard_3028"/>
          <elementType ref="SyVoltSyntax.diagram.Wildcard_3029"/>
          <elementType ref="SyVoltSyntax.diagram.PositiveMatchAssociation_4003"/>
+         <elementType ref="SyVoltSyntax.diagram.MatchSameElements_4014"/>
+         <elementType ref="SyVoltSyntax.diagram.ApplySameElements_4015"/>
          <elementType ref="SyVoltSyntax.diagram.ApplyAssociation_4005"/>
          <elementType ref="SyVoltSyntax.diagram.Trace_4013"/>
          <elementType ref="SyVoltSyntax.diagram.AttributeRefAttributeRef_4009"/>
