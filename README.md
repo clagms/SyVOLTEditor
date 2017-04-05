@@ -17,5 +17,5 @@ Installation
 This editor is distributed as an eclipse plugin and works in all major operating systems. You can download eclipse modelling tools from [https://eclipse.org/](https://eclipse.org/).
 
 You can install it through the update site:
-https://dl.dropboxusercontent.com/u/9650993/SyVoltSyntaxUpdateSite/site.xml (This is just the [SyVoltSyntaxUpdateSite](./SyVoltSyntaxUpdateSite) directory contents).
+https://www.dropbox.com/s/l0i6zjxkrk3brzd/site.xml (This is just the [SyVoltSyntaxUpdateSite](./SyVoltSyntaxUpdateSite) directory contents).
 
